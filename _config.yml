@@ -1,0 +1,39 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: rubyschool
+
+# email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Книга Ruby для романтиков (Ruby Is For Fun)
+  Курсы по Ruby | Sinatra | Ruby on Rails бесплатно от Романа Пушкина
+  
+  
+#baseurl:
+url: "https://rubyschool.us" # the base hostname & protocol for your site
+
+include: ['_pages']
+
+copyright:
+  name: rubyschool
+  link: 'https://rubyschool.us'
+
+# Build settings
+permalink: /:title/
+paginate: 6
+paginate_path: /page:num/
+
+# Sass style
+sass:
+  style: compressed
+
+# Ruby Gems
+plugins: 
+  - jekyll-paginate
+  - jekyll-seo-tag
+

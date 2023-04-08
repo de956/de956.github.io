@@ -1,0 +1,788 @@
+// ********************** alert *************************
+
+#alert-global {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+// ********************** title-page ********************
+
+.start-page {
+  padding-top: 80px;
+  padding-bottom: 30px;
+
+  #ruby-title {
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    @keyframes example {
+      from {opacity: 0}
+      to {opacity: 1}
+    }
+  }
+
+  #rails-title {
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    @keyframes example {
+      from {opacity: 0}
+      to {opacity: 1}
+    }
+  }
+
+  #rubyschool-title {
+    animation-name: example;
+    animation-duration:4s;
+    animation-iteration-count: 1;
+    @keyframes example {
+      from {opacity: 0}
+      to {opacity: 1}
+    }
+  }
+
+  .card.text-center{
+    border: 0px;
+  }
+
+  p#text-title {
+    span {
+      background-color: #f4f7fc;
+      border-radius: 5px;
+      padding: 5px;
+      font-size: large;
+      font-weight: 390;
+    }
+  }
+
+  a {
+    font-size: 1.1em;
+  }
+
+  #course-title {
+    padding-top: 50px;
+
+    animation-name: example;
+    animation-duration:5s;
+    animation-iteration-count: 1;
+    @keyframes example {
+      from {opacity: 0}
+      to {opacity: 1}
+    }
+
+    .btn {
+      font-size: large;
+      font-weight: 700;
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+
+// ********************** navbar ***********************
+
+.rubyschool-logo {
+  img {
+    margin: 0px;
+    padding-right: 10px;
+    height: 65px;
+    width: 75px;
+  }
+}
+
+.navbar-brand {
+  font-size: 1.40em;
+  font-weight:580;
+  margin: 0px;  
+}
+
+.navbar-light .navbar-toggler {
+  border-width: 0px;
+}
+
+hr.nav-header {
+  margin: 0px;
+}
+
+nav.container.navbar.navbar-expand-lg.navbar-light {
+  border-bottom: 1px solid #DFDFDF;
+}
+
+// navigator-lessons (button at the bottom of the lesson page)
+.next-previous-articles {
+
+  .pagination {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    margin: 1em;
+  }
+
+  a.page-link {
+    // margin: 1em;
+    color: white;
+    padding: 15px;
+    max-height: 80px;
+    background-color: #007BFF;
+  }
+
+  a:hover {
+    background-color:#0063cc;
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);    
+    -o-transform: scale(1.02);
+  }
+}
+
+// ********************** book **********************
+
+.book-presentation {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.book-info {
+
+  #book-description {
+    padding: 10px;
+  }
+} 
+
+.book-list {
+  padding-bottom: 80px;  
+
+  a {
+    font-size: 0.95em;
+  }
+
+  svg {
+    padding-right: 10px;
+    height: 37px;
+    width: 37px;
+  }
+}
+
+.book-header {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  font-size: large;
+}
+
+.book {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .col-sm-6 {
+    padding-bottom: 10px;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .card-img-top {
+    height: auto;
+    margin-bottom: 0px;
+  }
+}
+
+.book-license {
+  text-align: center;
+
+  img {
+    margin: 5px;
+    width: 110px;
+    height: 22px;
+    display: inline;
+  }
+
+  a {
+    font-size: 0.95em;
+  }
+}
+
+// ********************** lessons links (navigator-page with all lessons 1-50) *********************
+
+.lessons-header {
+  // font-size: larger;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 25px;
+  padding-left: 25px;
+  font-size: large;
+}
+
+.lessons-navbar {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-link.active {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    border-color: #007BFF;
+  }
+
+  .nav-link {
+    border: 1px solid rgb(236, 236, 240);
+    border-radius: 5px;
+    margin: 3px;
+  }
+
+  a:hover {
+    background-color: rgb(224, 226, 231);
+  }
+
+  .nav-tabs {
+    border-bottom: none;
+  }
+}
+
+.lessons-table {
+  text-align: center;
+  padding-top: 50px;
+
+  .card.text-center {
+    background-color: #ebedf3;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+  }
+
+  .card-header {
+    svg {
+      color: #a04a4a;
+    }
+  }
+
+  .table {
+    margin: 0px;
+  }
+
+  a {
+    color: white;
+    max-width: 75%;
+  }
+
+  .btn-primary {
+    width: 99%;
+    height: auto;
+  }
+
+  svg {
+    margin: 3px;
+  }
+
+  th {
+    font-size: 1.2em;
+  }
+
+  .list-group-item {
+    padding: 0px;
+    border: 0px;
+  }
+}
+
+// ********************** lesson page (with video, conspectus and useful links) ******************
+
+// video 1
+.lessons-page {
+  padding-top: 10px;
+
+  .card {
+    border: white;
+  }
+
+  .lesson-number {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 1.4em;
+    
+    svg {
+      height: 30px;
+      width: 30px;
+      margin: 5px;
+    } 
+  }
+
+  ul {
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    border: 1px solid #dee2e6;
+  }
+
+  a:hover {
+    background-color: #e2e6eb;
+  }
+
+  li {
+    margin: 5px;
+  }
+
+  .videoplayer {
+    padding-top: 70px;
+    margin-bottom: 30px;
+  }
+
+  // video 2
+  .video-another {
+    padding-top: 30px;
+    justify-content: center;
+
+    a:hover {
+      background-color: #016cdf;
+      text-decoration: underline;
+    }
+    
+    a.nav-link.active {
+      padding: 0.7em;
+
+      svg.bi.bi-youtube {
+        margin-right: 7px;
+      }
+    }
+  }
+
+
+  .lesson-topic {
+    padding-bottom: 30px;
+
+    .codeline {
+      margin-top: 20px;
+      margin-bottom: 15px;
+      padding: 5px 10px 5px 10px;
+      background-color: #f4f7fc;
+      border-radius: 5px;
+      font-family: monospace;
+      font-size: 0.9em;
+      word-break: break-all;
+      color: #30385c;
+
+      u {
+        text-decoration:overline;
+      }
+    }
+
+    a {
+      word-break: break-all;
+    }
+
+    p {
+      color: #494c52;
+      text-align: center;
+      font-size: large;
+      padding-top: 100px;
+      padding-bottom: 10px;
+    }
+
+    a {
+      border: 0px;
+    }
+
+    svg {
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+
+    li {
+      text-align: center;
+    }
+  }
+
+  #pills-video2 {
+    div .card-body {
+      padding: 0px;
+      margin-top: 70px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .accordion {
+    padding-bottom: 50px;
+
+    svg {
+      margin-top: 0px;
+      margin-left: 0px;
+      margin-right: 20px;
+      margin-bottom: 0px;
+      height: 30px;
+      width: 30px;
+    }
+
+    .card-header button {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      background-color: #E2E3E5;//#007BFF;
+      color: #343436;
+      border-color: #d8d8db;
+      box-shadow: none;
+    }
+
+    .card-header button:hover {
+      background-color: #007BFF;
+      border-color: #007BFF;
+      color: white;
+    }
+
+    a {
+      border: none;
+      word-break: break-all;
+    }
+
+    .card-header {
+      background-color: transparent;
+      border-bottom: none;
+      padding: 5px 0px 5px 0px;
+    }
+
+    .codeline {
+      background-color: #f4f7fc;
+      padding: 5px;
+      color: #494d61;
+      border-radius: 5px;
+      font-family: monospace;
+      font-size: 0.9em;
+    }
+  }
+
+  .lesson-table {
+
+  }
+
+  .links-useful {
+    padding-top: 50px;
+
+    p.tg-links {
+      padding-top: 10px;
+      padding-bottom: 70px;
+      text-align: center;
+
+      svg {
+        margin-right: 10px;
+      }
+
+      a {
+        margin: 10px;
+        padding: 10px 20px 10px 20px;
+        border: none;
+      }
+
+      a:hover {
+        background-color: #0068d8;
+        text-decoration: underline;
+        // -webkit-transform: scale(1.00);
+        // -moz-transform: scale(1.00);    
+        // -o-transform: scale(1.00);
+      }
+    }
+  }
+}
+// ********************** author **********************
+
+.author-name {
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+  img {
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 1px #999999;
+    max-width: 90%;
+    height: auto;
+  }
+
+  p {
+    text-align: center;
+    font-size: large;
+    padding-top: 50px;
+  }
+}
+
+.author-info {
+  p {
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  a {
+    font-size: 0.95em;
+  }
+}
+
+// ********************** donate **********************
+
+.donate-header {
+  p {
+    text-align: center;
+    padding-top: 100px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: large;
+  }
+}
+
+.donate {
+  text-align: center;
+  padding-bottom: 50px;
+
+  ul {
+    align-items: center;
+
+    a {
+      font-size: 0.95em;
+    }
+  }
+
+  p {
+    font-size: large;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  svg {
+    margin: 10px 10px 10px 10px;
+  }
+
+  .list-group-item {
+    word-break: break-all;
+  }
+}
+
+// ********************** feedback **********************
+
+.feedback-support-header {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;  
+  font-size:large;
+}
+
+.feedback-support {
+
+  li.list-group-item {
+    padding: 10px;
+  }
+
+  svg {
+    margin: 10px;
+  }
+}
+
+.feedback-post {
+
+  .card.text-center{
+    margin-bottom: 50px;
+  }
+
+  .card-body {
+    background-color: #f6f7fa;
+    border-bottom: 1px solid rgb(214, 214, 214);
+  }
+
+  p.card-text {
+    text-align: left;
+    font-style: italic;
+    
+  }
+
+  .card-header {
+    text-align: center;
+    background-color: #ebedf3;
+    
+    p.feedback-title {
+      margin-top: 1px;
+      margin-bottom: 1px;
+
+      svg {
+        padding-right: 15px;
+        height: 42px;
+        width: 42px;
+      }
+    }
+  }
+
+  p.feedback-person {
+    margin-top: 1px;
+    margin-bottom: 1px;
+
+    svg {
+      padding-right: 15px;
+      height: 42px;
+      width: 42px;
+    }
+  }
+
+  padding-top: 100px;
+  text-decoration: dashed;
+  text-align: left;
+}
+
+// ********************** footer ***********************
+
+footer {
+  margin-top: 50px;
+  padding-top: 10px;
+  border-top: 1px solid #DFDFDF;
+
+  .footer-header {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #6c6f72;
+
+    p {
+      margin-bottom: 0.3em;
+    }
+  }
+
+  svg {
+    margin: 1px;
+    padding-bottom: 2px;
+  }
+
+  .nav-link {
+    padding: 0px;
+  }
+
+  .footer-info {
+    p {
+      padding-top: 3px;
+      margin-bottom: 10px;
+      font-size: 0.8em;
+      
+      a:hover {
+        color: white;
+        background-color: #016cdf;
+        margin-top: 2px;
+      }
+    }
+  }
+
+  .badge.badge-secondary {
+    text-align: center;
+    font-size: 1.12em;
+    margin: 3px;
+    padding-bottom: 0.3em;
+  }  
+}
+
+// ********************** contributions ********************
+
+.contributions-alert {
+  padding-bottom: 50px;
+
+  p {
+    margin-top: 100px;
+    text-align: center;
+    margin: 0px;
+  }
+}
+
+.contributions {
+  padding-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 100px;
+
+  svg {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+  }
+
+  #links a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(51, 50, 50);
+    background-color: #E2E3E5;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #d8d8db;
+  }
+
+  #links a:hover {
+    text-decoration: underline;
+    background-color: #007BFF;
+    color: white;
+    
+  }
+
+  p.tg-links {
+    padding-bottom: 70px;
+    text-align: center;
+
+    svg {
+      margin-right: 10px;
+      margin-left: 0px;
+      height: 20px;
+      width: 20px;
+    }
+
+    a {
+      margin: 10px;
+      padding: 10px 20px 10px 20px;
+      border: none;
+    }
+
+    a:hover {
+      background-color: #0068d8;
+      text-decoration: underline;
+    }
+  }
+}
+
+.contributions-pull-request {
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 70px;
+  font-size: large;
+}
+
+.contributions-person {
+  text-align: center;
+
+  a {
+    margin: 5px;
+    font-size: 1em;
+    border: none;
+  }
+
+  a:hover {
+    background-color:#0063cc;
+  }
+}
+
+// ********************** another **********************
+
+// disable sidebar
+.col-md-8 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+article.post {
+  margin-bottom: 1em;
+}
+
+// 404
+.error-page {
+  text-align: center;
+  padding-top: 26%;
+  padding-bottom: 26%;
+  align-items: center;
+  color: #6c6f72;
+}
