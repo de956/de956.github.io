@@ -646,9 +646,11 @@ footer {
 
   .nav-link {
     padding: 0px;
+    margin: 0px;
   }
 
   .footer-info {
+
     p {
       padding-top: 3px;
       margin-bottom: 10px;
@@ -657,7 +659,7 @@ footer {
       a:hover {
         color: white;
         background-color: #016cdf;
-        margin-top: 2px;
+        margin-top: 0.3px;
       }
     }
   }
@@ -665,9 +667,10 @@ footer {
   .badge.badge-secondary {
     text-align: center;
     font-size: 1.12em;
-    margin: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
     padding-bottom: 0.3em;
-  }  
+  }
 }
 
 // ********************** contributions ********************
