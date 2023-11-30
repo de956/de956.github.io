@@ -1,0 +1,195 @@
+---
+layout: post
+title: урок 25
+categories: lessons
+---
+
+<div class="lessons-page">
+  <p class="lesson-number"> {% include gem-svg.html %} урок 25</p>
+
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
+    <!-- button for [ video ] -->
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" 
+        id="pills-video1-tab" 
+        data-toggle="pill" 
+        href="#pills-video1" 
+        role="tab" 
+        aria-controls="pills-video1" 
+        aria-selected="true">
+          Видео
+      </a>
+    </li>
+
+    <!-- button for [ video 2 ] -->
+    <!--
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" 
+        id="pills-video2-tab" 
+        data-toggle="pill" 
+        href="#pills-video2" 
+        role="tab" 
+        aria-controls="pills-video2" 
+        aria-selected="false">
+          Конспект
+      </a>
+    </li>
+    -->
+
+    <!-- button for [ links from lessons ] -->
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" 
+        id="pills-links-tab" 
+        data-toggle="pill" 
+        href="#pills-links" 
+        role="tab" 
+        aria-controls="pills-links" 
+        aria-selected="false">
+          Полезное
+      </a>
+    </li>
+
+    <!-- button for [ ]-->
+    <!--  
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" 
+        id="pills-contact-tab" 
+        data-toggle="pill" 
+        href="#pills-contact" 
+        role="tab" 
+        aria-controls="pills-contact" 
+        aria-selected="false">
+          кнопка
+      </a>
+    </li>
+    -->
+  </ul>
+  
+  <div class="tab-content" id="pills-tabContent">
+
+    <!-- video -->
+    <div class="tab-pane fade show active" id="pills-video1" role="tabpanel" aria-labelledby="pills-video1-tab">
+      
+      <!-- videoplayer -->
+      <div class="videoplayer">
+        <div style="padding:59.38% 0 0 0;position:relative;">
+          <iframe src="https://www.youtube.com/embed/l1ZET_4f5dg" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 5px; box-shadow: 0px 0px 20px 0px #999;"
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture">
+          </iframe>        
+        </div>
+
+        <div class="video-another">
+          <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+              <a class="nav-link active id="youtube"
+                target="_blank"  
+                href="https://vimeo.com/105059530">
+                {% include videoplayer-svg.html %} Смотреть урок на Vimeo
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link active id="conspectus"
+                target="_blank"  
+                href="https://github.com/krdprog/rubyschool-notes/blob/master/one-by-one/lesson-25.md">
+                {% include conspectus-paperclip-svg.html %} Читать конспект на GitHub
+              </a>
+            </li>
+          </ul>
+        </div>      
+      </div>
+
+      <!-- lesson -->
+      <div class="lesson-topic">
+        <p>{% include lesson-topic-svg.html %} Тема урока:</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %}
+            настройка git для пушей без запроса пароля (по ключу ssh)
+          </li>
+          <li class="list-group-item">{% include lesson-info-svg.html %} установка SQLite3</li>
+          <li class="list-group-item">{% include lesson-info-svg.html %} немного про синтаксис SQL</li>
+          <li class="list-group-item">{% include lesson-info-svg.html %} создание БД и таблиц</li>
+          <hr>
+        </ul>
+      </div>
+
+      <div class="lesson-topic">
+        <p>{% include lesson-topic-svg.html %} Домашнее задание:</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %}
+            Установить визуальную программу для работы с БД
+          </li>
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %}
+            Создать БД BarberShop
+          </li>
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %}
+            Создать таблицы: 
+            <hr>
+            <p class="codeline">
+              Таблица 1. Users<br />
+              <br /> 
+              Id - идентификатор, primary key, автоинкремент, тип Integer<br />
+              Name - varchar<br />
+              Phone - varchar<br />
+              DateStamp - varchar<br />
+              Barber - varchar<br />
+              Color - varchar
+            </p>
+            <hr>
+            <p class="codeline">
+              Таблица 2. Contacts<br />
+              <br /> 
+              Id - идентификатор, primary key, автоинкремент, тип Integer<br /> 
+              Email - varchar<br /> 
+              Message - varchar
+            </p>
+          </li>
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %}
+            Добавить несколько записей с помощью консоли в таблицы 
+            <code class="codeline">Users</code> и <code class="codeline">Contacts</code>
+            <hr>
+            Если не получится, создать БД в блокноте и скопировать в sqlite3 вручную по аналогии с запросом:
+            <hr>
+            <code class="codeline">
+              CREATE TABLE "Cars" ("Id" INTEGER PRIMARY KEY AUTOINCREMENT, "Name" VARCHAR, "Price" INTEGER)
+            </code>
+          </li>
+          <hr>
+        </ul>
+      </div>
+    </div>
+
+    <!-- video 2 -->
+    <!--
+    <div class="tab-pane fade" id="pills-video2" role="tabpanel" aria-labelledby="pills-video2-tab">
+
+      <div class="card" id="video2">
+
+        <div class="card-body">
+          <div style="padding:59.38% 0 0 0;position:relative;">
+          <iframe src="#" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 5px; box-shadow: 0px 0px 20px 0px #999;"
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture">
+          </iframe>        
+        </div>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <!-- links from lessons -->    
+    <div class="tab-pane fade" id="pills-links" role="tabpanel" aria-labelledby="pills-links-tab">
+      {% include links-from-lessons.html %}
+    </div>
+
+  </div>
+</div>

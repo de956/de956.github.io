@@ -1,0 +1,179 @@
+---
+layout: post
+title: урок 48
+categories: lessons
+---
+
+<div class="lessons-page">
+  <p class="lesson-number"> {% include gem-svg.html %} урок 48</p>
+
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
+    <!-- button for [ video ] -->
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" 
+        id="pills-video1-tab" 
+        data-toggle="pill" 
+        href="#pills-video1" 
+        role="tab" 
+        aria-controls="pills-video1" 
+        aria-selected="true">
+          Видео
+      </a>
+    </li>
+
+    <!-- button for [ video 2 ] -->
+    <!--
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" 
+        id="pills-video2-tab" 
+        data-toggle="pill" 
+        href="#pills-video2" 
+        role="tab" 
+        aria-controls="pills-video2" 
+        aria-selected="false">
+          Конспект
+      </a>
+    </li>
+    -->
+
+    <!-- button for [ links from lessons ] -->
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" 
+        id="pills-links-tab" 
+        data-toggle="pill" 
+        href="#pills-links" 
+        role="tab" 
+        aria-controls="pills-links" 
+        aria-selected="false">
+          Полезное
+      </a>
+    </li>
+
+    <!-- button for [ ]-->
+    <!--  
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" 
+        id="pills-contact-tab" 
+        data-toggle="pill" 
+        href="#pills-contact" 
+        role="tab" 
+        aria-controls="pills-contact" 
+        aria-selected="false">
+          кнопка
+      </a>
+    </li>
+    -->
+  </ul>
+  
+  <div class="tab-content" id="pills-tabContent">
+
+    <!-- video -->
+    <div class="tab-pane fade show active" id="pills-video1" role="tabpanel" aria-labelledby="pills-video1-tab">
+      
+      <!-- videoplayer -->
+      <div class="videoplayer">
+        <div style="padding:59.38% 0 0 0;position:relative;">
+          <iframe src="https://www.youtube.com/embed/qHpvKELCbOE" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 5px; box-shadow: 0px 0px 20px 0px #999;"
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture">
+          </iframe>        
+        </div>
+
+        <div class="video-another">
+          <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+              <a class="nav-link active id="youtube"
+                target="_blank"  
+                href="https://vimeo.com/113003510">
+                {% include videoplayer-svg.html %} Смотреть урок на Vimeo
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link active id="conspectus"
+                target="_blank"  
+                href="https://github.com/krdprog/rubyschool-notes/blob/master/one-by-one/lesson-48.md">
+                {% include conspectus-paperclip-svg.html %} Читать конспект на GitHub
+              </a>
+            </li>
+          </ul>
+        </div>      
+      </div>
+
+      <!-- lesson -->
+      <div class="lesson-topic">
+        <p>{% include lesson-topic-svg.html %} Тема урока:</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %} 
+            Scaffolding (генерация модели, вида и контроллера одной командой)
+          </li>
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %} 
+            недостатки скаффолдинга
+          </li>
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %} 
+            создание небольшого приложения при помощи скаффолдинга
+          </li>
+          <li class="list-group-item">{% include lesson-info-svg.html %} кратко про отправку имейлов</li>
+          <hr>
+        </ul>
+      </div>
+
+      <div class="lesson-topic">
+        <p>{% include lesson-topic-svg.html %} Домашнее задание:</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %}
+            <a href="http://rusrails.ru/action-mailer-basics" target="_blank">
+              http://rusrails.ru/action-mailer-basics
+            </a>
+             - читать
+          </li>
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %}
+            Если у вас есть свой домен - зарегистрироваться на postmarkapp
+            <hr>
+            Попробовать гем 
+            <a href="https://github.com/wildbit/postmark-gem" target="_blank">
+              https://github.com/wildbit/postmark-gem
+            </a>
+             и 
+            <a href="https://github.com/wildbit/postmark-rails" target="_blank">
+              https://github.com/wildbit/postmark-rails
+            </a>
+          </li>
+          <hr>
+        </ul>
+      </div>
+    </div>
+
+    <!-- video 2 -->
+    <!--
+    <div class="tab-pane fade" id="pills-video2" role="tabpanel" aria-labelledby="pills-video2-tab">
+
+      <div class="card" id="video2">
+
+        <div class="card-body">
+          <div style="padding:59.38% 0 0 0;position:relative;">
+          <iframe src="#" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 5px; box-shadow: 0px 0px 20px 0px #999;"
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture">
+          </iframe>        
+        </div>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <!-- links from lessons -->    
+    <div class="tab-pane fade" id="pills-links" role="tabpanel" aria-labelledby="pills-links-tab">
+      {% include links-from-lessons.html %}
+    </div>
+
+  </div>
+</div>

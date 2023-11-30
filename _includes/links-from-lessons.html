@@ -1,0 +1,924 @@
+<div class="links-useful">
+
+  <p class="tg-links">
+    <a class="btn btn-primary" id="rubyschool-chat" 
+      href="https://t.me/rubyschool" 
+      role="button"
+      target="_blank"
+    >
+      {% include telegram-svg.html %} Telegram чат Rubyschool
+    </a>
+
+    <a class="btn btn-primary" id="rubyschool-bot"
+      href="https://t.me/rubyschool_bot" 
+      role="button"
+      target="_blank"
+    >
+      {% include telegram-svg.html %} Telegram бот конспектов
+    </a>
+  </p>
+</div>
+
+<div class="links-table">
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-center" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#collapseOne" 
+          aria-expanded="true" 
+          aria-controls="collapseOne">
+            {% include lesson-button-svg.html %} Как смотреть видео на ускоренном воспроизведении ?
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Установите add-on в Firefox: Video Speed Controller.
+        Для ускорения нажмите много раз на D, для замедления — на S. 
+        Есть и для Google Chrome. Работает для Vimeo, Youtube и для всех остальных HTML5-видео.
+        Скорость регулируется даже больше, чем в нативной Youtube-настройке, где максимум двойная скорость. 
+        Можно увеличивать со звуком до скорости в 4 раза выше начальной.
+        <hr>
+        Постепенно приучайте свой мозг к более высоким скоростям просмотра ролика, 
+        и со временем вы будете быстрее осваивать видеоматериалы.
+        <hr>
+        Подробнее о Video Speed Controller: 
+        <a href="https://github.com/codebicycle/videospeed" target="_blank">
+          https://github.com/codebicycle/videospeed
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-center collapsed" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#collapseTwo" 
+          aria-expanded="false" 
+          aria-controls="collapseTwo">
+            {% include lesson-button-svg.html %} Памятка юного линуксоида
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        <center><u>Рекомендуется выбирать популярные дистрибютивы GNU/Linux для первого опыта использования!</u></center>
+        <br>
+        Такие как Ubuntu (Lubuntu/Kubuntu/Xubuntu), Linux Mint, Fedora (Debian и Arch тоже популярны,
+        но более сложны в настройке/установке).<br />
+        Эти дистрибютивы с доступной документацией и большим сообществом пользователей. 
+        Поэтому, в случае каких-либо вопросов, скорее всего, ответ будет на первой поисковой странице,
+        либо всегда будет возможность спросить у многочисленных пользователей.
+        <hr>
+        Рекомендуется устанавливать программы из репозиториев дистрибютива
+        или сайта/репозитория конкретного производителя программы.
+        <hr>
+        Рекомендуется использовать менеджеры версий Ruby, такие как 
+        <code class="codeline">rvm/rbenv/chruby/asdf</code> 
+        и не рекомендуется использовать "системный" Ruby дистрибютива.
+        <hr>
+        Не использовать <code class="codeline">sudo/root</code> для установки gem'ов, версий Ruby.
+        <hr>
+        Не использовать директорию <code class="codeline">/tmp</code> - это каталог временных файлов. 
+        После перезагрузки файлы будут удалены!
+        <hr>
+        С осторожностью использовать команду удаления <code class="codeline">rm -rf</code>.
+        <hr>
+        Заглядывать и читать в директории <code class="codeline">/var/log/*</code> - там системные логи.
+        <hr>
+        Для справочной информации обычно достаточно добавить <code class="codeline">-h/-help/--help</code>.
+        Например: <code class="codeline">user@rubyschool:~$ ruby -h</code>.<br /><br />
+        Можно также восвользоваться утилитой <code class="codeline">man</code>, 
+        например: <code class="codeline">user@rubyschool:~$ man ruby</code>.
+        <hr>
+        Для поиска программ (например консольного файлового менеджера midnight-commander)
+        из репозиториев дистрибютива можно воспользоваться командой:<br>
+        <br />
+        для debian-based дистрибютива: <code class="codeline">user@rubyschool:~$ apt search mc</code><br /><br />
+        для arch-based дистрибютива: <code class="codeline">user@rubyschool:~$ pacman -S mc</code> / 
+        <code class="codeline">user@rubyschool:~$ pacman -Ss mc</code>.
+        <hr>
+        Узнать место/каталог установленной программы: <code class="codeline">user@rubyschool:~$ which ruby</code>.
+        <hr>
+        Базовый список других команд: 
+        <a href="https://wiki.debian.org/ru/ShellCommands" target="_blank">
+          https://wiki.debian.org/ru/ShellCommands
+        </a>.
+        <hr>
+        Не рекомендуется под root'ом работать и ходить на сервер по <code class="codeline">ssh</code>.
+        <hr>
+        <u>Ни стоит (!) менять локаль/язык на сервере - оставить по умолчанию (т. е. EN/US, на латинице).</u>
+        <hr>
+        <u>Делать резервные копии важных данных!</u>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-center collapsed" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#collapseThree" 
+          aria-expanded="false" 
+          aria-controls="collapseThree"
+        >
+          {% include lesson-button-svg.html %} 
+          Эти ссылки давались на протяжении всего курса и были даны для дополнительного обучения
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        <a href="https://ru.wikibooks.org/wiki/Ruby" target="_blank">https://ru.wikibooks.org/wiki/Ruby</a>
+        <hr>
+
+        <a href="https://ru.wikibooks.org/wiki/Ruby/Базовые_типы_данных" target="_blank">
+          https://ru.wikibooks.org/wiki/Ruby/Базовые_типы_данных
+        </a>
+        <hr>
+
+        Class: Integer - 
+        <a href="https://ruby-doc.org/core-2.5.3/Integer.html" target="_blank">
+          https://ruby-doc.org/core-2.5.3/Integer.html
+        </a>
+        <hr>
+
+        Class: String - 
+        <a href="https://ruby-doc.org/core-2.5.3/String.html" target="_blank">
+          https://ruby-doc.org/core-2.5.3/String.html
+        </a>
+        <hr>
+
+        GUI framework - 
+        <a href="http://shoesrb.com/" target="_blank">
+          http://shoesrb.com/
+        </a>
+        <hr>
+
+        Class: Array - 
+        <a href="https://ruby-doc.org/core-2.5.1/Array.html" target="_blank">
+          https://ruby-doc.org/core-2.5.1/Array.html
+        </a>
+        <hr>
+
+        Classes, Objects, and Variables - 
+        <a href="http://phrogz.net/programmingruby/tut_classes.html" target="_blank">
+          http://phrogz.net/programmingruby/tut_classes.html
+        </a>
+        <hr>
+
+        <a href="http://www.tutorialspoint.com/ruby/ruby_modules.htm" target="_blank">
+          http://www.tutorialspoint.com/ruby/ruby_modules.htm
+        </a>
+        <hr>
+
+        RFC HTTP - 
+        <a href="http://lib.ru/WEBMASTER/rfc2068/" target="_blank">
+          http://lib.ru/WEBMASTER/rfc2068/
+        </a>
+        <hr>
+
+        Class: Net::HTTP - 
+        <a href="https://ruby-doc.org/stdlib-2.4.1/libdoc/net/http/rdoc/Net/HTTP.html" target="_blank">
+          https://ruby-doc.org/stdlib-2.4.1/libdoc/net/http/rdoc/Net/HTTP.html
+        </a>
+        <hr>
+
+        Class: Net::HTTP post_form - 
+        <a href="https://ruby-doc.org/stdlib-2.4.1/libdoc/net/http/rdoc/Net/HTTP.html#method-c-post_form" 
+          target="_blank"
+        >
+          https://ruby-doc.org/stdlib-2.4.1/libdoc/net/http/rdoc/Net/HTTP.html#method-c-post_form
+        </a>
+        <hr>
+
+        Про git - 
+        <a href="http://think-like-a-git.net/" target="_blank">
+          http://think-like-a-git.net/
+        </a>
+        <hr>
+
+        Sinatra Bootstrap - 
+        <a href="https://github.com/bootstrap-ruby/sinatra-bootstrap" target="_blank">
+          https://github.com/bootstrap-ruby/sinatra-bootstrap
+        </a>
+        <hr>
+
+        Gem sinatra reloader - 
+        <a href="https://rubygems.org/gems/sinatra-reloader" target="_blank">
+          https://rubygems.org/gems/sinatra-reloader
+        </a>
+        <hr>
+
+        Gem sinatra contrib - 
+        <a href="https://rubygems.org/gems/sinatra-contrib" target="_blank">
+          https://rubygems.org/gems/sinatra-contrib
+        </a>
+        <hr>
+
+        <a href="https://stackoverflow.com/questions/2068148/contact-form-in-ruby-sinatra-and-haml" target="_blank">
+          https://stackoverflow.com/questions/2068148/contact-form-in-ruby-sinatra-and-haml
+        </a>
+        <hr>
+
+        Gem pony - 
+        <a href="https://github.com/benprew/pony/" target="_blank">
+          https://github.com/benprew/pony/
+        </a>
+        <hr>
+
+        Документация gem Pony - 
+        <a href="https://www.rubydoc.info/gems/pony/1.12" target="_blank">
+          https://www.rubydoc.info/gems/pony/1.12
+        </a>
+        <hr>
+
+        Sqlite - 
+        <a href="https://sqlite.org/index.html" target="_blank">
+          https://sqlite.org/index.html
+        </a>
+        <hr>
+
+        Пройти упражнения на тренажёре SQL is Hard - 
+        <a href="http://www.sqlishard.com/" target="_blank">
+          http://www.sqlishard.com/
+        </a>
+        <hr>
+
+        SQLite Browser - 
+        <a href="https://sqlitebrowser.org/dl/" target="_blank">
+          https://sqlitebrowser.org/dl/
+        </a>
+        <hr>
+
+        Шпаргалка по SQLite3 - 
+        <a href="https://github.com/krdprog/sqlite-3-rus-howto" target="_blank">
+          https://github.com/krdprog/sqlite-3-rus-howto
+        </a>
+        <hr>
+      
+        Escaping Strings For Ruby SQLite Insert - 
+        <a href="https://stackoverflow.com/questions/9614236/escaping-strings-for-ruby-sqlite-insert" target="_blank">
+          https://stackoverflow.com/questions/9614236/escaping-strings-for-ruby-sqlite-insert
+        </a>
+        <hr>
+      
+        Prepare - 
+        <a href="https://www.rubydoc.info/github/luislavena/sqlite3-ruby/SQLite3/Database#prepare-instance_method" 
+          target="_blank"
+        >
+          https://www.rubydoc.info/github/luislavena/sqlite3-ruby/SQLite3/Database#prepare-instance_method
+        </a>
+        <hr>
+      
+        Про вставку данных - 
+        <a href="https://stackoverflow.com/questions/13462112/inserting-ruby-string-into-sqlite" target="_blank">
+          https://stackoverflow.com/questions/13462112/inserting-ruby-string-into-sqlite
+        </a>
+        <hr>
+      
+        Документация - 
+        <a href="https://www.rubydoc.info/github/luislavena/sqlite3-ruby" target="_blank">
+          https://www.rubydoc.info/github/luislavena/sqlite3-ruby
+        </a>
+        <hr>
+      
+        <a href="https://www.rubydoc.info/github/luislavena/sqlite3-ruby/SQLite3/Database" target="_blank">
+          https://www.rubydoc.info/github/luislavena/sqlite3-ruby/SQLite3/Database
+        </a>
+        <hr>
+      
+        <a href="https://github.com/krdprog/contact-form-for-sinatra-ruby-rus" target="_blank">
+          https://github.com/krdprog/contact-form-for-sinatra-ruby-rus
+        </a>
+        <hr>
+      
+        Плагин для выбора даты (js) - 
+        <a href="https://github.com/xdan/datetimepicker" target="_blank">
+          https://github.com/xdan/datetimepicker
+        </a>
+        <hr>
+      
+        SQLite ORDER BY - 
+        <a href="http://www.tutorialspoint.com/sqlite/sqlite_order_by.htm" target="_blank">
+          http://www.tutorialspoint.com/sqlite/sqlite_order_by.htm
+        </a>
+        <hr>
+      
+        Мой вариант Sinatra Blog - 
+        <a href="https://github.com/krdprog/sinatra-blog" target="_blank">
+          https://github.com/krdprog/sinatra-blog
+        </a>
+        <hr>
+      
+        Ссылка на документацию Sinatra - 
+        <a href="https://github.com/sinatra/sinatra/blob/master/README.md" target="_blank">
+          https://github.com/sinatra/sinatra/blob/main/README.md
+        </a>
+        <hr>
+      
+        <a href="https://rvm.io/" target="_blank">
+          https://rvm.io/
+        </a>
+        <hr>
+      
+        Command line ruby cheat sheets - 
+        <a href="http://cheat.errtheblog.com/s/rvm" target="_blank">
+          http://cheat.errtheblog.com/s/rvm
+        </a>
+        <hr>
+      
+        Active Record Query Interface - Ruby on Rails Guides - 
+        <a href="https://guides.rubyonrails.org/active_record_querying.html" target="_blank">
+          https://guides.rubyonrails.org/active_record_querying.html
+        </a>
+        <hr>
+      
+        Ссылка на полный проект Barbershop Sinatra with ActiveRecord - 
+        <a href="https://github.com/krdprog/barbershop-sinatra-with-activerecord" target="_blank">
+          https://github.com/krdprog/barbershop-sinatra-with-activerecord
+        </a>
+        <hr>
+      
+        Active Record Validations — Ruby on Rails Guides - 
+        <a href="https://guides.rubyonrails.org/active_record_validations.html" target="_blank">
+          https://guides.rubyonrails.org/active_record_validations.html
+        </a>
+        <hr>
+      
+        <a href="https://guides.rubyonrails.org/active_record_validations.html#length" target="_blank">
+          https://guides.rubyonrails.org/active_record_validations.html#length
+        </a>
+        <hr>
+
+        <a href="https://guides.rubyonrails.org/active_record_validations.html#inclusion" target="_blank">
+          https://guides.rubyonrails.org/active_record_validations.html#inclusion
+        </a>
+        <hr>
+      
+        Find в ActiveRecord - 
+        <a href="https://guides.rubyonrails.org/active_record_querying.html" target="_blank">
+          https://guides.rubyonrails.org/active_record_querying.html
+        </a>
+        <hr>
+      
+        ActiveRecord "one-to-many" (отношение сущностей) - 
+        <a href="https://guides.rubyonrails.org/association_basics.html" target="_blank">
+          https://guides.rubyonrails.org/association_basics.html
+        </a>
+        <hr>
+      
+        How exacty HTTP protocol works? - 
+        <a href="https://stackoverflow.com/questions/20918321/how-exacty-http-protocol-works" target="_blank">
+          https://stackoverflow.com/questions/20918321/how-exacty-http-protocol-works
+        </a>
+        <hr>
+      
+        What happens when you type in a URL in browser - 
+        <a href="https://stackoverflow.com/questions/2092527/what-happens-when-you-type-in-a-url-in-browser" target="_blank">
+          https://stackoverflow.com/questions/2092527/what-happens-when-you-type-in-a-url-in-browser
+        </a>
+        <hr>
+      
+        Сетевая модель OSI — Википедия - 
+        <a href=
+          "https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D1%82%D0%B5%D0%B2%D0%B0%D1%8F_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C_OSI" 
+          target="_blank">
+          https://ru.wikipedia.org/wiki/сетевая_модель_OSI
+        </a>
+        <hr>
+      
+        Why is it said that "HTTP is a stateless protocol"? - 
+        <a href="https://stackoverflow.com/questions/13200152/why-is-it-said-that-http-is-a-stateless-protocol" 
+          target="_blank"
+        >
+          https://stackoverflow.com/questions/13200152/why-is-it-said-that-http-is-a-stateless-protocol
+        </a>
+        <hr>
+      
+        Протокол без сохранения состояния — 
+        <a href=
+          "https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB_
+            %D0%B1%D0%B5%D0%B7_%D1%81%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F_
+            %D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8F
+          " 
+          target="_blank">
+          https://ru.wikipedia.org/wiki/Протокол_без_сохранения_состояния
+        </a>
+        <hr>
+      
+        RFC 2616 - Hypertext Transfer Protocol -- HTTP/1.1 - 
+        <a href="https://tools.ietf.org/html/rfc2616" target="_blank">
+          https://tools.ietf.org/html/rfc2616
+        </a>
+        <hr>
+      
+        <a href="https://github.com/plataformatec/devise" target="_blank">
+          https://github.com/plataformatec/devise
+        </a>
+        <hr>
+      
+        Аутентификация в Rails-приложениях с помощью Devise - 
+        <a href="https://habr.com/post/208056" target="_blank">
+          https://habr.com/post/208056
+        </a>
+        <hr>
+      
+        Vanilla JS - 
+        <a href="http://vanilla-js.com/" target="_blank">
+          http://vanilla-js.com/
+        </a>
+        <hr>
+      
+        15 Questions to Ask During a Ruby Interview - 
+        <a href="https://gist.github.com/krdprog/64a463de21fe77a8946019fde6662d67" target="_blank">
+          https://gist.github.com/krdprog/64a463de21fe77a8946019fde6662d67
+        </a>
+        <hr>
+      
+        ООП с примерами (часть 1) / Хабр - 
+        <a href="https://habr.com/post/87119/" target="_blank">
+          https://habr.com/post/87119/
+        </a>
+        <hr>
+      
+        ООП с примерами (часть 2) / Хабр - 
+        <a href="https://habr.com/post/87205/" target="_blank">
+          https://habr.com/post/87205/
+        </a>
+        <hr>
+      
+        Tiny jQuery plugin to display a message to the user on the first visit to a page - 
+        <a href="https://github.com/ro31337/first-visit-js" target="_blank">
+          https://github.com/ro31337/first-visit-js
+        </a>
+        <hr>
+      
+        HTML5 Web Storage - 
+        <a href="https://www.w3schools.com/html/html5_webstorage.asp" target="_blank">
+          https://www.w3schools.com/html/html5_webstorage.asp
+        </a>
+        <hr>
+      
+        Почему не стоит использовать LocalStorage / Хабр - 
+        <a href="https://habr.com/post/349164/" target="_blank">
+          https://habr.com/post/349164/
+        </a>
+        <hr>
+      
+        LocalStorage на пальцах - 
+        <a href="https://tproger.ru/articles/localstorage/" target="_blank">
+          https://tproger.ru/articles/localstorage/
+        </a>
+        <hr>
+      
+        Window.localStorage - Web APIs | MDN - 
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank">
+          https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+        </a>
+        <hr>
+      
+        Looping through localStorage in HTML5 and JavaScript - 
+        <a href="https://stackoverflow.com/questions/3138564/looping-through-localstorage-in-html5-and-javascript" 
+          target="_blank"
+        >
+          https://stackoverflow.com/questions/3138564/looping-through-localstorage-in-html5-and-javascript
+        </a>
+        <hr>
+      
+        ActiveRecord::ConnectionAdapters::TableDefinition - 
+        <a href="https://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/TableDefinition.html" target="_blank">
+          https://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/TableDefinition.html
+        </a>
+        <hr>
+      
+        ActiveRecord::ConnectionAdapters::SchemaStatements - 
+        <a href="https://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html" target="_blank">
+          https://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html
+        </a>
+        <hr>
+      
+        Operators - What does ||= (or-equals) mean in Ruby? - 
+        <a href="https://stackoverflow.com/questions/995593/what-does-or-equals-mean-in-ruby#14697343" target="_blank">
+          https://stackoverflow.com/questions/995593/what-does-or-equals-mean-in-ruby#14697343
+        </a>
+        <hr>
+      
+        Ruby - Что делает оператор «|| =» в руби? - 
+        <a href="https://stackoverrun.com/ru/q/2545320" target="_blank">
+          https://stackoverrun.com/ru/q/2545320
+        </a>
+        <hr>
+      
+        Order counter (Ruby) - 
+        <a href="https://github.com/krdprog/order-counter-ruby/" target="_blank">
+          https://github.com/krdprog/order-counter-ruby/
+        </a>
+        <hr>
+      
+        Javascript - Listing localstorage - 
+        <a href="https://stackoverflow.com/questions/2841029/listing-localstorage#2841042" target="_blank">
+          https://stackoverflow.com/questions/2841029/listing-localstorage#2841042
+        </a>
+        <hr>
+      
+        Javascript - enumerating localStorage properties - 
+        <a href="https://stackoverflow.com/questions/27946563/enumerating-localstorage-properties" target="_blank">
+          https://stackoverflow.com/questions/27946563/enumerating-localstorage-properties
+        </a>
+        <hr>
+      
+        DefactoSoftware/Hours: Time registration that doesn't suck - 
+        <a href="https://github.com/DefactoSoftware/Hours" target="_blank">
+          https://github.com/DefactoSoftware/Hours
+        </a>
+        <hr>
+      
+        Rails Routing from the Outside In — Ruby on Rails Guides - 
+        <a href="http://guides.rubyonrails.org/routing.html" target="_blank">
+          http://guides.rubyonrails.org/routing.html
+        </a>
+        <hr>
+      
+        oDesk and Elance Tests 2015 - 
+        <a href="https://web.archive.org/web/20150220030931/http://odesk-tests.com:80/" target="_blank">
+          https://web.archive.org/web/20150220030931/http://odesk-tests.com:80/
+        </a>
+        <hr>
+      
+        Ruby on Rails Test 2015 - oDesk - 
+        <a href="https://web.archive.org/web/20150206003956/http://odesk-tests.com:80/tests/307/questions" target="_blank">
+          https://web.archive.org/web/20150206003956/http://odesk-tests.com:80/tests/307/questions
+        </a>
+        <hr>
+      
+        Pizza Shop (rubyschool project). Ruby, Sinatra, ActiveRecord, JS, localStorage - 
+        <a href="https://github.com/krdprog/PizzaShop-rubyschool" target="_blank">
+          https://github.com/krdprog/PizzaShop-rubyschool
+        </a>
+        <hr>
+      
+        Task Them All - Painless to-do lists to organize your [remote] workers - 
+        <a href="http://web.archive.org/web/20140929220047/http://taskthemall.com:80/" target="_blank">
+          http://web.archive.org/web/20140929220047/http://taskthemall.com:80/
+        </a>
+        <hr>
+      
+        Rusrails: Роутинг в Rails - 
+        <a href="http://rusrails.ru/rails-routing" target="_blank">
+          http://rusrails.ru/rails-routing
+        </a>
+        <hr>
+      
+        Rails Routing from the Outside In — Ruby on Rails Guides - 
+        <a href="https://guides.rubyonrails.org/routing.html#singular-resources" target="_blank">
+          https://guides.rubyonrails.org/routing.html#singular-resources
+        </a>
+        <hr>
+      
+        <a href="https://guides.rubyonrails.org/routing.html#singular-resources" target="_blank">
+          https://guides.rubyonrails.org/routing.html#singular-resources
+        </a>
+        <hr>
+      
+        <a href="https://guides.rubyonrails.org/routing.html#crud-verbs-and-actions" target="_blank">
+          https://guides.rubyonrails.org/routing.html#crud-verbs-and-actions
+        </a>
+        <hr>
+      
+        Rusrails: Командная строка Rails - 
+        <a href="http://rusrails.ru/a-guide-to-the-rails-command-line" target="_blank">
+          http://rusrails.ru/a-guide-to-the-rails-command-line
+        </a>
+        <hr>
+      
+        Ссылка на репозиторий с учебным блогом на Rails - 
+        <a href="https://github.com/krdprog/RailsBlog-rubyschool" target="_blank">
+          https://github.com/krdprog/RailsBlog-rubyschool
+        </a>
+        <hr>
+      
+        <a href="https://railsguides.net/advanced-rails-model-generators/" target="_blank">
+          https://railsguides.net/advanced-rails-model-generators/
+        </a>
+        <hr>
+      
+        <a href="https://guides.rubyonrails.org/association_basics.html" target="_blank">
+          https://guides.rubyonrails.org/association_basics.html
+        </a>
+        <hr>
+      
+        <a href="https://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html" target="_blank">
+          https://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html
+        </a>
+        <hr>
+      
+        <a href="http://rusrails.ru/active-record-associations" target="_blank">
+          http://rusrails.ru/active-record-associations
+        </a>
+        <hr>
+      
+        <a href="http://www.rusrails.ru/active-record-associations#foreign_key" target="_blank">
+          http://www.rusrails.ru/active-record-associations#foreign_key
+        </a>
+        <hr>
+      
+        <a href="https://github.com/rails/strong_parameters" target="_blank">
+          https://github.com/rails/strong_parameters
+        </a>
+        <hr>
+      
+        <a href="https://guides.rubyonrails.org/action_controller_overview.html#more-examples" target="_blank">
+          https://guides.rubyonrails.org/action_controller_overview.html#more-examples
+        </a>
+        <hr>
+      
+        Репозиторий Rspec-demo - 
+        <a href="https://github.com/krdprog/rspec-demo-rubyschool" target="_blank">
+          https://github.com/krdprog/rspec-demo-rubyschool
+        </a>
+        <hr>
+      
+        <a href="https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers" target="_blank">
+          https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
+        </a>
+        <hr>
+      
+        Документация по гему devise - 
+        <a href="https://github.com/plataformatec/devise" target="_blank">
+          https://github.com/plataformatec/devise
+        </a>
+        <hr>
+      
+        Статья на Хабре по devise - 
+        <a href="https://habr.com/ru/post/208056/" target="_blank">
+          https://habr.com/ru/post/208056/
+        </a>
+        <hr>
+      
+        Посмотреть примеры - 
+        <a href="https://github.com/plataformatec/devise/wiki/Example-applications" target="_blank">
+          https://github.com/plataformatec/devise/wiki/Example-applications
+        </a>
+        <hr>
+      
+        <a href="https://github.com/plataformatec/devise#controller-filters-and-helpers" target="_blank">
+          https://github.com/plataformatec/devise#controller-filters-and-helpers
+        </a>
+        <hr>
+      
+        <a href="https://ru.wikipedia.org/wiki/JSON" target="_blank">
+          https://ru.wikipedia.org/wiki/JSON
+        </a>
+        <hr>
+      
+        <a href="https://api.rubyonrails.org/classes/ActiveRecord/Migration.html" target="_blank">
+          https://api.rubyonrails.org/classes/ActiveRecord/Migration.html
+        </a>
+        <hr>
+      
+        <a href="https://andreyex.ru/bazy-dannyx/uchebnoe-posobie-po-sql/sql-indeksy/" target="_blank">
+          https://andreyex.ru/bazy-dannyx/uchebnoe-posobie-po-sql/sql-indeksy/
+        </a>
+        <hr>
+      
+        <a href="http://www.sql.ru/articles/mssql/03013101indexes.shtml" target="_blank">
+          http://www.sql.ru/articles/mssql/03013101indexes.shtml
+        </a>
+        <hr>
+      
+        <a href="https://habr.com/ru/post/247373/" target="_blank">
+          https://habr.com/ru/post/247373/
+        </a>
+        <hr>
+      
+        <a href="https://stackoverflow.com/questions/18424671/what-is-params-requireperson-permitname-age-doing-in-rails-4" 
+          target="_blank"
+        >
+          https://stackoverflow.com/questions/18424671/what-is-params-requireperson-permitname-age-doing-in-rails-4
+        </a>
+        <hr>
+      
+        <a href="https://api.rubyonrails.org/classes/ActionController/Parameters.html#method-i-require" target="_blank">
+          https://api.rubyonrails.org/classes/ActionController/Parameters.html#method-i-require
+        </a>
+        <hr>
+      
+        <a href="https://api.rubyonrails.org/classes/ActionController/Parameters.html#method-i-permit" target="_blank">
+          https://api.rubyonrails.org/classes/ActionController/Parameters.html#method-i-permit
+        </a>
+        <hr>
+      
+        <a href="https://api.rubyonrails.org/classes/ActionController/Parameters.html" target="_blank">
+          https://api.rubyonrails.org/classes/ActionController/Parameters.html
+        </a>
+        <hr>
+      
+        <a href="https://stackoverflow.com/questions/7493767/are-redirect-to-and-render-exchangeable" target="_blank">
+          https://stackoverflow.com/questions/7493767/are-redirect-to-and-render-exchangeable
+        </a>
+        <hr>
+      
+        <a href="https://en.wikipedia.org/wiki/Post/Redirect/Get" target="_blank">
+          https://en.wikipedia.org/wiki/Post/Redirect/Get
+        </a>
+        <hr>
+      
+        <a href="http://rusrails.ru/action-view-overview" target="_blank">
+          http://rusrails.ru/action-view-overview
+        </a>
+        <hr>
+      
+        <a href="https://guides.rubyonrails.org/form_helpers.html" target="_blank">
+          https://guides.rubyonrails.org/form_helpers.html
+        </a>
+        <hr>
+      
+        <a href="https://github.com/watir/watir" target="_blank">
+          https://github.com/watir/watir
+        </a>
+        <hr>
+      
+        <a href="https://github.com/SeleniumHQ/selenium" target="_blank">
+          https://github.com/SeleniumHQ/selenium
+        </a>
+        <hr>
+      
+        <a href="http://kanbanflow.com/" target="_blank">
+          http://kanbanflow.com/
+        </a>
+        <hr>
+      
+        <a href="http://trello.com/" target="_blank">
+          http://trello.com/
+        </a>
+        <hr>
+      
+        <a href="https://www.vagrantup.com/" target="_blank">
+          https://www.vagrantup.com/
+        </a>
+        <hr>
+      
+        <a href="https://github.com/rails/rails-dev-box" target="_blank">
+          https://github.com/rails/rails-dev-box
+        </a>
+        <hr>
+      
+        <a href="https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers" target="_blank">
+          https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
+        </a>
+        <hr>
+      
+        <a href="https://matchers.shoulda.io/" target="_blank">
+          https://matchers.shoulda.io/
+        </a>
+        <hr>
+      
+        <a href="http://matchers.shoulda.io/docs/v3.1.3/" target="_blank">
+          http://matchers.shoulda.io/docs/v3.1.3/
+        </a>
+        <hr>
+      
+        <a href="https://github.com/thoughtbot/shoulda-matchers" target="_blank">
+          https://github.com/thoughtbot/shoulda-matchers
+        </a>
+        <hr>
+      
+        <a href="http://matchers.shoulda.io/docs/v3.1.3/Shoulda/Matchers/ActiveRecord.html#have_many-instance_method" 
+          target="_blank"
+        >
+          http://matchers.shoulda.io/docs/v3.1.3/Shoulda/Matchers/ActiveRecord.html#have_many-instance_method
+        </a>
+        <hr>
+      
+        <a href="https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md" target="_blank">
+          https://github.com/thoughtbot/factory_bot/blob/v4.9.0/UPGRADE_FROM_FACTORY_GIRL.md
+        </a>
+        <hr>
+      
+        <a href="https://www.rubydoc.info/gems/factory_bot/file/GETTING_STARTED.md" target="_blank">
+          https://www.rubydoc.info/gems/factory_bot/file/GETTING_STARTED.md
+        </a>
+        <hr>
+      
+        <a href="https://www.rubydoc.info/gems/factory_bot/file/GETTING_STARTED.md#Defining_factories" target="_blank">
+          https://www.rubydoc.info/gems/factory_bot/file/GETTING_STARTED.md#Defining_factories
+        </a>
+        <hr>
+      
+        <a href="https://www.rubydoc.info/gems/factory_bot/file/GETTING_STARTED.md#Sequences" target="_blank">
+          https://www.rubydoc.info/gems/factory_bot/file/GETTING_STARTED.md#Sequences
+        </a>
+        <hr>
+      
+        <a href="http://protesting.ru/testing/levels/acceptance.html" target="_blank">
+          http://protesting.ru/testing/levels/acceptance.html
+        </a>
+        <hr>
+      
+        <a href="https://www.rubydoc.info/github/teamcapybara/capybara/master" target="_blank">
+          https://www.rubydoc.info/github/teamcapybara/capybara/master
+        </a>
+        <hr>
+      
+        <a href="https://github.com/teamcapybara/capybara#using-capybara-with-rspec" target="_blank">
+          https://github.com/teamcapybara/capybara#using-capybara-with-rspec
+        </a>
+        <hr>
+      
+        <a href="https://relishapp.com/rspec/rspec-core/v/3-8/docs/hooks/before-and-after-hooks" target="_blank">
+          https://relishapp.com/rspec/rspec-core/v/3-8/docs/hooks/before-and-after-hooks
+        </a>
+        <hr>
+      
+        <a href="https://github.com/teamcapybara/capybara#transactions-and-database-setup" target="_blank">
+          https://github.com/teamcapybara/capybara#transactions-and-database-setup
+        </a>
+        <hr>
+      
+        <a href="https://github.com/DatabaseCleaner/database_cleaner#rspec-example" target="_blank">
+          https://github.com/DatabaseCleaner/database_cleaner#rspec-example
+        </a>
+        <hr>
+      
+        <a href="https://github.com/teamcapybara/capybara" target="_blank">
+          https://github.com/teamcapybara/capybara
+        </a>
+        <hr>
+      
+        <a href="https://www.rubydoc.info/github/teamcapybara/capybara/master" target="_blank">
+          https://www.rubydoc.info/github/teamcapybara/capybara/master
+        </a>
+        <hr>
+      
+        <a href="https://postmarkapp.com/developer/user-guide/sending-email/sending-with-api" target="_blank">
+          https://postmarkapp.com/developer/user-guide/sending-email/sending-with-api
+        </a>
+        <hr>
+      
+        <a href="https://github.com/wildbit/postmark-gem" target="_blank">
+          https://github.com/wildbit/postmark-gem
+        </a>
+        <hr>
+      
+        <a href="https://github.com/wildbit/postmark-rails" target="_blank">
+          https://github.com/wildbit/postmark-rails
+        </a>
+        <hr>
+      
+        <a href="http://rusrails.ru/action-mailer-basics" target="_blank">
+          http://rusrails.ru/action-mailer-basics
+        </a>
+        <hr>
+      
+        <a href="https://www.youtube.com/watch?v=FNOhpAWbiKA" target="_blank">
+          https://www.youtube.com/watch?v=FNOhpAWbiKA
+        </a>
+        <hr>
+      
+        <a href="https://github.com/mikel/mail" target="_blank">
+          https://github.com/mikel/mail
+        </a>
+        <hr>
+      
+        <a href="https://habr.com/ru/post/210288/" target="_blank">
+          https://habr.com/ru/post/210288/
+        </a>
+        <hr>
+      
+        <a href="https://ru.wikipedia.org/wiki/Design_Patterns" target="_blank">
+          https://ru.wikipedia.org/wiki/Design_Patterns
+        </a>
+        <hr>
+      
+        <a href="https://ruby-doc.org/stdlib-2.5.3/libdoc/singleton/rdoc/Singleton.html" target="_blank">
+          https://ruby-doc.org/stdlib-2.5.3/libdoc/singleton/rdoc/Singleton.html
+        </a>
+        <hr>
+      
+        <a href="https://github.com/krdprog/logger.rb" target="_blank">
+          https://github.com/krdprog/logger.rb
+        </a>
+        <hr>
+      
+        <a href="https://rubular.com/" target="_blank">
+          https://rubular.com/
+        </a>
+        <hr>
+    
+        <a href="https://github.com/krdprog/rubyschool-notes/blob/master/for-lesson-50-regex.txt" target="_blank">
+          https://github.com/krdprog/rubyschool-notes/blob/master/for-lesson-50-regex.txt
+        </a>
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

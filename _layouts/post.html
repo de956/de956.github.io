@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div class="row">
+  <div class="col-md-8">
+    <article class="post">
+      <div class="post-content" itemprop="articleBody">{{ content }}</div>
+    </article>
+
+    <div class="next-previous-articles">
+      <nav aria-label="">
+        <ul class="pagination">
+
+          {% if page.next.url %}
+            <!-- <li class="page-item">
+              <a class="page-link" id="l-index" href="{{page.next.url}}" tabindex="-1">
+                {% include pointer-svg.html %} 
+                {{page.next.title}}
+              </a>
+            </li> -->
+
+            <a href="{{page.next.url}}" tabindex="-1" 
+              class="btn btn-primary btn-lg active" 
+              id="l-index" 
+              role="button" 
+              aria-pressed="true">
+                {% include l-index-svg.html %} 
+                {{page.next.title}}
+            </a>
+          {% endif %} 
+          
+          {% if page.previous.url %}
+            <!-- <li class="page-item">
+              <a class="page-link" id="r-index" href="{{page.previous.url}}">
+                {% include pointer-svg.html %}
+                {{page.previous.title}} 
+              </a>
+            </li> -->
+            <a href="{{page.previous.url}}" 
+              class="btn btn-primary btn-lg active" 
+              id="r-index" 
+              role="button" 
+              aria-pressed="true">
+                {{page.previous.title}}
+                {% include pointer-svg.html %}
+            </a>
+          {% endif %}
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

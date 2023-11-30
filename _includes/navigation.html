@@ -1,0 +1,94 @@
+
+<nav class="container navbar navbar-expand-lg navbar-light">
+  <div class="rubyschool-logo">
+    <div class="card">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" id="top-svg">{% include mortarboard-svg.html %}</li>
+        <li class="list-group-item" id="bottom-svg">{% include gem-svg.html %}</li>
+      </ul>
+    </div>
+  </div>
+
+  <a class="navbar-brand" href={{"/" | relative_url}}>
+    <span class="ruby-color">Ruby</span><span class="school-color">school</span>
+  </a>
+  
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Уроки
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+          <a class="dropdown-item" href={{"/lessons/" | relative_url}}>Уроки (1-50)</a>
+
+          <div class="dropdown-divider"></div>
+            <a
+              class="dropdown-item"
+              target="_blank"
+              href="https://github.com/ro31337/rubyschool/blob/master/README.md"
+              >Темы уроков (Github)
+            </a>
+          
+          <div class="dropdown-divider"></div>
+          <a
+            class="dropdown-item"
+            target="_blank"
+            href="https://github.com/ro31337/rubyschool/blob/master/HOMEWORK.md"
+            >Домашние задания (Github)
+          </a>
+
+          <div class="dropdown-divider"></div>
+          <a
+            class="dropdown-item"
+            target="_blank"
+            href="https://github.com/krdprog/rubyschool-notes"
+            >Конспекты (Github)
+          </a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href={{"/book/" | relative_url}}>Книга</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href={{"/contributions/" | relative_url}}>Сообщество</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href={{"/feedback/" | relative_url}}>Отзывы</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href={{"/donate/" | relative_url}}>Поддержать</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href={{"/author/" | relative_url}}>Автор</a>
+      </li>
+    </ul>
+  </div>
+</nav>

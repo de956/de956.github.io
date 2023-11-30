@@ -1,0 +1,956 @@
+---
+layout: page
+permalink: /lessons/
+---
+
+<div class="lessons-header">
+  <div class="lessons-info">
+    <div class="alert alert-info" role="alert">
+      Навигация по урокам и краткое описание тем, которые разбираются на каждом уроке.<br />
+      По ссылке доступно видео урока, домашнее задание, конспекты и полезные материаллы.<br />
+    </div>
+  </div>
+</div>
+
+<div class="lessons-navbar">
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <!-- 1-10 lessons -->
+      <a class="nav-link active" 
+        id="nav-10-tab" 
+        data-toggle="tab" 
+        href="#nav-10" 
+        role="tab" 
+        aria-controls="nav-10" 
+        aria-selected="true">
+          урок 1 - 10
+      </a>
+      <!-- 11-20 lessons -->
+      <a class="nav-link" 
+        id="nav-20-tab" 
+        data-toggle="tab" 
+        href="#nav-20" 
+        role="tab" 
+        aria-controls="nav-20" 
+        aria-selected="false">
+          урок 11 - 20
+      </a>
+      <!-- 21-30 lessons -->
+      <a class="nav-link" 
+        id="nav-30-tab" 
+        data-toggle="tab" 
+        href="#nav-30" 
+        role="tab" 
+        aria-controls="nav-30" 
+        aria-selected="false">
+          урок 21 - 30
+      </a>
+      <!-- 31-40 lessons-->
+      <a class="nav-link" 
+        id="nav-40-tab" 
+        data-toggle="tab" 
+        href="#nav-40" 
+        role="tab" 
+        aria-controls="nav-40" 
+        aria-selected="false">
+          урок 31 - 40
+      </a>
+      <!-- 41-50 lessons -->
+      <a class="nav-link" 
+        id="nav-50-tab" 
+        data-toggle="tab" 
+        href="#nav-50" 
+        role="tab" 
+        aria-controls="nav-50" 
+        aria-selected="false">
+          урок 41 - 50
+      </a>
+    </div>
+  </nav>
+</div>
+
+<div class="tab-content" id="nav-tabContent">
+  <!-- lessons 1-10 -->
+  <div class="tab-pane fade show active" id="nav-10" role="tabpanel" aria-labelledby="nav-10-tab">
+    <div class="lessons-table">
+
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 1</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} что такое Ruby
+            {% include lesson-info-svg.html %} что такое Ruby on Rails<br />
+            {% include lesson-info-svg.html %} настраиваем окружение
+            {% include lesson-info-svg.html %} устанавливаем программы
+          </p>
+          <a href="{% post_url 2023-03-20-lesson-1 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 2</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} puts, print, gets. #, \n
+            {% include lesson-info-svg.html %} переменные<br />
+            {% include lesson-info-svg.html %} специальные символы
+            {% include lesson-info-svg.html %} .chomp, .to_i, .to_s
+          </p>
+          <a href="{% post_url 2023-03-19-lesson-2 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+     </div>
+
+     <div class="card text-center">
+      <div class="card-header">
+        <h4> {% include gem-svg.html %} урок 3</h4>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          {% include lesson-info-svg.html %} irb
+          {% include lesson-info-svg.html %} типы данных: string, fixnum, float, integer
+          {% include lesson-info-svg.html %} class, array. Hash
+          {% include lesson-info-svg.html %} задача про сопротивление (закон Ома)<br />
+          {% include lesson-info-svg.html %} преобразование типов данных (to_i переводим в to_s)
+        </p>
+        <a href="{% post_url 2023-03-18-lesson-3 %}" class="btn btn-primary">
+          {% include lesson-button-svg.html %} перейти к уроку
+        </a>
+      </div>
+    </div>
+
+    <div class="card text-center">
+      <div class="card-header">
+        <h4> {% include gem-svg.html %} урок 4</h4>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          {% include lesson-info-svg.html %} интерполяция строк - #{}
+          {% include lesson-info-svg.html %} поддержка русского языка в Windows (#encoding: 866 + ANSI)<br />
+          {% include lesson-info-svg.html %} удаление символа (.chomp!)
+          {% include lesson-info-svg.html %} методы
+          {% include lesson-info-svg.html %} пайпы ||<br />
+          {% include lesson-info-svg.html %} задачи на преобразование типов и интерполяцию строк
+        </p>
+        <a href="{% post_url 2023-03-17-lesson-4 %}" class="btn btn-primary">
+          {% include lesson-button-svg.html %} перейти к уроку
+        </a>
+      </div>
+    </div>
+
+    <div class="card text-center">
+      <div class="card-header">
+        <h4> {% include gem-svg.html %} урок 5</h4>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          {% include lesson-info-svg.html %} методы (продолжение): upto, capitalize, strip, whitespace<br />
+          {% include lesson-info-svg.html %} \n \t \r
+          {% include lesson-info-svg.html %} .times (считает от 0)
+          {% include lesson-info-svg.html %} .upto (считает от 1)
+        </p>
+        <a href="{% post_url 2023-03-16-lesson-5 %}" class="btn btn-primary">
+          {% include lesson-button-svg.html %} перейти к уроку
+        </a>
+      </div>
+    </div>
+
+    <div class="card text-center">
+      <div class="card-header">
+        <h4> {% include gem-svg.html %} урок 6</h4>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          {% include lesson-info-svg.html %} блоки
+          {% include lesson-info-svg.html %} sleep, .times, do...end, rand
+          {% include lesson-info-svg.html %} задания про upto, times, sleep<br />
+          {% include lesson-info-svg.html %} задача: рассчитать накопления 
+          (сколько будем откладывать и сколько месяцев)<br />
+          {% include lesson-info-svg.html %} formating disk, Matrix
+        </p>
+        <a href="{% post_url 2023-03-15-lesson-6 %}" class="btn btn-primary">
+          {% include lesson-button-svg.html %} перейти к уроку
+        </a>
+      </div>
+    </div>
+
+    <div class="card text-center">
+      <div class="card-header">
+        <h4> {% include gem-svg.html %} урок 7</h4>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          {% include lesson-info-svg.html %} if...end, операторы сравнения, exit
+          {% include lesson-info-svg.html %} задача: алгоритм "вы довольны зарплатой?" (Да/Нет)<br />
+          {% include lesson-info-svg.html %} задача: посчитать, сколько гостей придёт
+          {% include lesson-info-svg.html %} задача: сделать игру "однорукий бандит"
+        </p>
+        <a href="{% post_url 2023-03-14-lesson-7 %}" class="btn btn-primary">
+          {% include lesson-button-svg.html %} перейти к уроку
+        </a>
+      </div>
+    </div>
+
+    <div class="card text-center">
+      <div class="card-header">
+        <h4> {% include gem-svg.html %} урок 8</h4>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          {% include lesson-info-svg.html %} 1_000_000
+          {% include lesson-info-svg.html %} калькулятор
+          {% include lesson-info-svg.html %} if/else<br />
+          {% include lesson-info-svg.html %} задача: игра - угадываем число
+          {% include lesson-info-svg.html %} break, while true, ranges, each<br />
+          {% include lesson-info-svg.html %} разница между .. и ...
+          {% include lesson-info-svg.html %} rand
+        </p>
+        <a href="{% post_url 2023-03-13-lesson-8 %}" class="btn btn-primary">
+          {% include lesson-button-svg.html %} перейти к уроку
+        </a>
+      </div>
+    </div>
+
+    <div class="card text-center">
+      <div class="card-header">
+        <h4> {% include gem-svg.html %} урок 9</h4>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          {% include lesson-info-svg.html %} функции и методы (def)
+          {% include lesson-info-svg.html %} глобальные переменные (@)
+          {% include lesson-info-svg.html %} символы (:)<br />
+          {% include lesson-info-svg.html %} массивы, добавление в массивы
+        </p>
+        <a href="{% post_url 2023-03-12-lesson-9 %}" class="btn btn-primary">
+          {% include lesson-button-svg.html %} перейти к уроку
+        </a>
+      </div>
+    </div>
+
+    <div class="card text-center">
+      <div class="card-header">
+        <h4> {% include gem-svg.html %} урок 10</h4>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          {% include lesson-info-svg.html %} инициализация массивов (продолжение)<br />
+          {% include lesson-info-svg.html %} задачи: двигаем робота, удаляем/добавляем учеников в список<br />
+          {% include lesson-info-svg.html %} loop do
+        </p>
+        <a href="{% post_url 2023-03-11-lesson-10 %}" class="btn btn-primary">
+          {% include lesson-button-svg.html %} перейти к уроку
+        </a>
+      </div>
+    </div>
+
+    </div>
+  </div>
+  <!-- lessons 11-20 -->
+  <div class="tab-pane fade" id="nav-20" role="tabpanel" aria-labelledby="nav-20-tab">
+    <div class="lessons-table">
+
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 11</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} разбор дз камень-ножницы-бумага
+            {% include lesson-info-svg.html %} хэши (hash)
+          </p>
+          <a href="{% post_url 2023-03-10-lesson-11 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 12</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} отличия хэшей от массивов
+            {% include lesson-info-svg.html %} задача: создаем словарик<br />
+            {% include lesson-info-svg.html %} задача: переделываем “однорукого бандита” с использованием хэшей<br />
+            {% include lesson-info-svg.html %} функции (описание и их вызов)
+            {% include lesson-info-svg.html %} дз: “Tic-Tac-Toe” (крестики-нолики)
+          </p>
+          <a href="{% post_url 2023-03-09-lesson-12 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 13</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} повторяем хэши
+            {% include lesson-info-svg.html %} использование if в одну строку
+            {% include lesson-info-svg.html %} merge<br />
+            {% include lesson-info-svg.html %} сохранение в файл >, >>
+            {% include lesson-info-svg.html %} немного об HTML
+          </p>
+          <a href="{% post_url 2023-03-08-lesson-13 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 14</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} введение в ООП
+            {% include lesson-info-svg.html %} классы
+            {% include lesson-info-svg.html %} объекты<br />
+            {% include lesson-info-svg.html %} attr_reader, attr_accessor
+          </p>
+          <a href="{% post_url 2023-03-07-lesson-14 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 15</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} задачи с классами: самолеты и аэропорты, альбомы и песни<br />
+            {% include lesson-info-svg.html %} наследование
+          </p>
+          <a href="{% post_url 2023-03-06-lesson-15 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 16</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} статические методы
+            {% include lesson-info-svg.html %} lambda-функции
+            {% include lesson-info-svg.html %} yield<br />
+            {% include lesson-info-svg.html %} наследование
+            {% include lesson-info-svg.html %} типы переменных
+          </p>
+          <a href="{% post_url 2023-03-05-lesson-16 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 17</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} мета-программирование (send)
+            {% include lesson-info-svg.html %} чтение и запись в файлы<br /> 
+            {% include lesson-info-svg.html %} получение списка папок и файлов в каталогах
+          </p>
+          <a href="{% post_url 2023-03-04-lesson-17 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 18</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} GET/POST запросы
+            {% include lesson-info-svg.html %} задача: программа для подбора пароля
+            {% include lesson-info-svg.html %} docker     
+          </p>
+          <a href="{% post_url 2023-03-03-lesson-18 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 19</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} установка DevKit на Windows
+            {% include lesson-info-svg.html %} установка Sinatra<br />
+            {% include lesson-info-svg.html %} Helloworld на Синатре
+          </p>
+          <a href="{% post_url 2023-03-02-lesson-19 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 20</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} установка и работа с Git
+            {% include lesson-info-svg.html %} установка Ungit на Windows<br />
+            {% include lesson-info-svg.html %} продолжение работы с Sinatra 
+          </p>
+          <a href="{% post_url 2023-03-01-lesson-20 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- lessons 21-30 -->
+  <div class="tab-pane fade" id="nav-30" role="tabpanel" aria-labelledby="nav-20-tab">
+    <div class="lessons-table">
+
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 21</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} ещё немного HTML-разметки
+            {% include lesson-info-svg.html %} основы CSS
+            {% include lesson-info-svg.html %} Bootstrap<br />
+            {% include lesson-info-svg.html %} установка готового небольшого приложения Sinatra с включенным Bootstrap'ом 
+          </p>
+          <a href="{% post_url 2023-02-28-lesson-21 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 22</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} Рома создает репозиторий. а все копируют себе
+            {% include lesson-info-svg.html %} ещё немного теории по git<br />
+            {% include lesson-info-svg.html %} доделываем приложение BarberShop для записи к парикмахеру 
+            (теперь уже с использованием Bootstrap)
+          </p>
+          <a href="{% post_url 2023-02-27-lesson-22 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 23</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} доработка приложения BarberShop
+            {% include lesson-info-svg.html %} немножко JS, jQuery<br />
+            {% include lesson-info-svg.html %} делаем colorpicker при помощи jQuery плагина
+          </p>
+          <a href="{% post_url 2023-02-26-lesson-23 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 24</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} немного подробнее о коде из предыдущего jQuery плагина и 
+            просто JS и jQuery<br />
+            {% include lesson-info-svg.html %} валидация
+            {% include lesson-info-svg.html %} сохранение значений в полях формы 
+          </p>
+          <a href="{% post_url 2023-02-25-lesson-24 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 25</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} настройка git для пушей без запроса пароля (по ключу ssh)<br />
+            {% include lesson-info-svg.html %} установка SQLite3
+            {% include lesson-info-svg.html %} немного про синтаксис SQL<br />
+            {% include lesson-info-svg.html %} создание БД и таблиц
+          </p>
+          <a href="{% post_url 2023-02-24-lesson-25 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 26</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} связываем приложение BarberShop с SQLite<br />
+            {% include lesson-info-svg.html %} устанавливаем datetimepicker
+            {% include lesson-info-svg.html %} выборка из БД, вывод информации
+          </p>
+          <a href="{% post_url 2023-02-23-lesson-26 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 27</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} разбираем домашнее задание
+            {% include lesson-info-svg.html %} выводим из БД в веб (в таблицу)<br />
+            {% include lesson-info-svg.html %} создаем вторую таблицу, добавляем туда значения<br />
+            {% include lesson-info-svg.html %} делаем выборку из БД, заносим в выпадающее меню 
+          </p>
+          <a href="{% post_url 2023-02-22-lesson-27 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 28</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} повторение
+            {% include lesson-info-svg.html %} новое приложение-блог (Leprosorium)<br />
+            {% include lesson-info-svg.html %} прием параметра из ссылки
+          </p>
+          <a href="{% post_url 2023-02-21-lesson-28 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 29</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} введение в ActiveRecord<br />
+            {% include lesson-info-svg.html %} rake
+            {% include lesson-info-svg.html %} tux
+            {% include lesson-info-svg.html %} migrations
+          </p>
+          <a href="{% post_url 2023-02-20-lesson-29 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 30</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} продолжение ActiveRecords<br />
+            {% include lesson-info-svg.html %} валидация при помощи ActiveRecord
+          </p>
+          <a href="{% post_url 2023-02-19-lesson-30 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- lessons 31-40 -->
+  <div class="tab-pane fade" id="nav-40" role="tabpanel" aria-labelledby="nav-40-tab">
+    <div class="lessons-table">
+
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 31</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} общая инфа по HTTP и запросам
+            {% include lesson-info-svg.html %} javascript
+          </p>
+          <a href="{% post_url 2023-02-18-lesson-31 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 32</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} повторение материала про классы
+            {% include lesson-info-svg.html %} работаем с localstorage<br />
+            {% include lesson-info-svg.html %} создаём магазин пиццы<br />
+            {% include lesson-info-svg.html %} разбираем вопросы, которые могут задавать на интервью при приёме на работу
+          </p>
+          <a href="{% post_url 2023-02-17-lesson-32 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 33</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} продолжаем разбор вопросов, 
+            которые могут задавать на интервью при приёме на работу<br />
+            {% include lesson-info-svg.html %} немного про yield
+            {% include lesson-info-svg.html %} пишем PizzaShop
+          </p>
+          <a href="{% post_url 2023-02-16-lesson-33 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 34</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} небольшое объяснение про операторы для 
+            краткой записи операций x += 1; x ||= 1<br />
+            {% include lesson-info-svg.html %} продолжаем делать pizzashop (javascript)
+            {% include lesson-info-svg.html %} устанавливаем Rails<br />
+            {% include lesson-info-svg.html %} объяснение структуры Rails
+          </p>
+          <a href="{% post_url 2023-02-15-lesson-34 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 35</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} ещё разбор вопросов, 
+            которые могут задавать на интервью при приёме на работу<br />
+            {% include lesson-info-svg.html %} разбираем тесты, представленные на Odesk<br />
+            {% include lesson-info-svg.html %} продолжаем писать PizzaShop
+          </p>
+          <a href="{% post_url 2023-02-14-lesson-35 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 36</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} краткое объяснение REST
+            {% include lesson-info-svg.html %} анализ написанного приложения
+          </p>
+          <a href="{% post_url 2023-02-13-lesson-36 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 37</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} введение в pull-реквесты
+            {% include lesson-info-svg.html %} разбираем задачи с собеседования<br />
+            {% include lesson-info-svg.html %} настройка отступов в Sublime text
+            {% include lesson-info-svg.html %} запускаем Rails<br />
+            {% include lesson-info-svg.html %} режимы запуска Rails
+            {% include lesson-info-svg.html %} генераторы Rails<br />
+            {% include lesson-info-svg.html %} создаем контроллер
+            {% include lesson-info-svg.html %} создаем модель
+          </p>
+          <a href="{% post_url 2023-02-12-lesson-37 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 38</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} разбираем задачи на интервью
+            {% include lesson-info-svg.html %} повторение<br />
+            {% include lesson-info-svg.html %} разбираем REST маршруты
+            {% include lesson-info-svg.html %} сравнениваем resource и resources
+          </p>
+          <a href="{% post_url 2023-02-11-lesson-38 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 39</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} создаем основные контроллеры (по REST) для сущности articles<br />
+            {% include lesson-info-svg.html %} создаем статичные страницы в RoR
+          </p>
+          <a href="{% post_url 2023-02-10-lesson-39 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 40</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} удаление статей
+            {% include lesson-info-svg.html %} атрибуты тегов data- (turbolinks)<br />
+            {% include lesson-info-svg.html %} небольшой рассказ про render
+            {% include lesson-info-svg.html %} отношения one-to-many<br />
+            {% include lesson-info-svg.html %} создаем форму для комментариев
+          </p>
+          <a href="{% post_url 2023-02-09-lesson-40 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- lessons 41-50 -->
+  <div class="tab-pane fade" id="nav-50" role="tabpanel" aria-labelledby="nav-50-tab">
+    <div class="lessons-table">
+
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 41</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} про типы связей (many-to-many, one-to-many, one-to-one)<br />
+            {% include lesson-info-svg.html %} задача: доделать блог до минимального функционала (CRUD)<br />
+            {% include lesson-info-svg.html %} полезные сервисы для веб-разработки
+            {% include lesson-info-svg.html %} rspec и тесты<br />
+            {% include lesson-info-svg.html %} пишем пару простых тестов
+          </p>
+          <a href="{% post_url 2023-02-08-lesson-41 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 42</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} матчеры для тестов
+            {% include lesson-info-svg.html %} пишем тест, закрывающий баги на github<br />
+            {% include lesson-info-svg.html %} devise: установка, минимальная настройка, 
+            создание ссылок для входа-выхода<br />
+          </p>
+          <a href="{% post_url 2023-02-07-lesson-42 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 43</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} делаем ссылки входа, выхода и т. п. с помощью devise<br />
+            {% include lesson-info-svg.html %} сессии и куки
+            {% include lesson-info-svg.html %} чуть-чуть про json<br />
+            {% include lesson-info-svg.html %} добавляем поля username в devise
+            {% include lesson-info-svg.html %} настраиваем блог для поля username
+          </p>
+          <a href="{% post_url 2023-02-06-lesson-43 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 44</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} “интервью” с другом Романа - Алексеем.<br />
+            {% include lesson-info-svg.html %} Вопросы про Odesk (Upwork) и в целом про ruby и программирование<br />
+            {% include lesson-info-svg.html %} bootstrap
+            {% include lesson-info-svg.html %} основы responsive-дизайна
+          </p>
+          <a href="{% post_url 2023-02-05-lesson-44 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 45</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} принцип работы метода params в контроллерах 
+            (используется для приёма параметров через post)<br />
+            {% include lesson-info-svg.html %} разница между render и redirect_to<br /> 
+            {% include lesson-info-svg.html %} разница между before_filter и before_action
+            {% include lesson-info-svg.html %} немного про хелперы<br />
+            {% include lesson-info-svg.html %} continuous integration и continuous delivery (CI и CD)<br />
+            {% include lesson-info-svg.html %} немного про vagrant
+          </p>
+          <a href="{% post_url 2023-02-04-lesson-45 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 46</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} тестируем модели
+            {% include lesson-info-svg.html %} устанавливаем rspec в приложение blog (и capybara)<br />
+            {% include lesson-info-svg.html %} устанавливаем shoulda-matchers<br />
+            {% include lesson-info-svg.html %} устанавливаем FactoryGirl: 
+            простейшая настройка, создание фабрики, тестирование<br />
+            {% include lesson-info-svg.html %} создаем фабрику с автоматическим назначением значений полей
+          </p>
+          <a href="{% post_url 2023-02-03-lesson-46 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 47</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} понятие о приёмочном тестировании (acceptance testing)<br />
+            {% include lesson-info-svg.html %} пишем тест для capybara
+            {% include lesson-info-svg.html %} понятие о i18n (internationalization)<br />
+            {% include lesson-info-svg.html %} применение i18n в capybara
+            {% include lesson-info-svg.html %} before и after hooks
+          </p>
+          <a href="{% post_url 2023-02-02-lesson-47 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 48</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} Scaffolding (генерация модели, вида и контроллера одной командой)<br />
+            {% include lesson-info-svg.html %} создание небольшого приложения при помощи скаффолдинга<br />
+            {% include lesson-info-svg.html %} недостатки скаффолдинга
+            {% include lesson-info-svg.html %} кратко про отправку имейлов
+          </p>
+          <a href="{% post_url 2023-02-01-lesson-48 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 49</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} полиморфные ассоциации 
+            (краткое объяснение что это такое и создание небольшого примера)<br />
+            {% include lesson-info-svg.html %} паттерны 
+            {% include lesson-info-svg.html %} типы переменных в классе, принадлежащие экземпляру класса и классу<br />
+            {% include lesson-info-svg.html %} Singleton. Разбор на примере.
+          </p>
+          <a href="{% post_url 2023-01-30-lesson-49 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+        
+      <div class="card text-center">
+        <div class="card-header">
+          <h4> {% include gem-svg.html %} урок 50</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            {% include lesson-info-svg.html %} регулярные выражения
+          </p>
+          <a href="{% post_url 2023-01-29-lesson-50 %}" class="btn btn-primary">
+            {% include lesson-button-svg.html %} перейти к уроку
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

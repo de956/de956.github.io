@@ -1,0 +1,231 @@
+---
+layout: post
+title: урок 46
+categories: lessons
+---
+
+<div class="lessons-page">
+  <p class="lesson-number"> {% include gem-svg.html %} урок 46</p>
+
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
+    <!-- button for [ video ] -->
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" 
+        id="pills-video1-tab" 
+        data-toggle="pill" 
+        href="#pills-video1" 
+        role="tab" 
+        aria-controls="pills-video1" 
+        aria-selected="true">
+          Видео
+      </a>
+    </li>
+
+    <!-- button for [ video 2 ] -->
+    <!--
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" 
+        id="pills-video2-tab" 
+        data-toggle="pill" 
+        href="#pills-video2" 
+        role="tab" 
+        aria-controls="pills-video2" 
+        aria-selected="false">
+          Конспект
+      </a>
+    </li>
+    -->
+
+    <!-- button for [ links from lessons ] -->
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" 
+        id="pills-links-tab" 
+        data-toggle="pill" 
+        href="#pills-links" 
+        role="tab" 
+        aria-controls="pills-links" 
+        aria-selected="false">
+          Полезное
+      </a>
+    </li>
+
+    <!-- button for [ ]-->
+    <!--  
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" 
+        id="pills-contact-tab" 
+        data-toggle="pill" 
+        href="#pills-contact" 
+        role="tab" 
+        aria-controls="pills-contact" 
+        aria-selected="false">
+          кнопка
+      </a>
+    </li>
+    -->
+  </ul>
+  
+  <div class="tab-content" id="pills-tabContent">
+
+    <!-- video -->
+    <div class="tab-pane fade show active" id="pills-video1" role="tabpanel" aria-labelledby="pills-video1-tab">
+      
+      <!-- videoplayer -->
+      <div class="videoplayer">
+        <div style="padding:59.38% 0 0 0;position:relative;">
+          <iframe src="https://www.youtube.com/embed/S3NC-ra8paY" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 5px; box-shadow: 0px 0px 20px 0px #999;"
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture">
+          </iframe>        
+        </div>
+
+        <div class="video-another">
+          <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+              <a class="nav-link active id="youtube"
+                target="_blank"  
+                href="https://vimeo.com/112254665">
+                {% include videoplayer-svg.html %} Смотреть урок на Vimeo
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link active id="conspectus"
+                target="_blank"  
+                href="https://github.com/krdprog/rubyschool-notes/blob/master/one-by-one/lesson-46.md">
+                {% include conspectus-paperclip-svg.html %} Читать конспект на GitHub
+              </a>
+            </li>
+          </ul>
+        </div>      
+      </div>
+
+      <!-- lesson -->
+      <div class="lesson-topic">
+        <p>{% include lesson-topic-svg.html %} Тема урока:</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{% include lesson-info-svg.html %} тестируем модели</li>
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %} 
+            устанавливаем rspec в приложение blog (и capybara)
+          </li>
+          <li class="list-group-item">{% include lesson-info-svg.html %} устанавливаем shoulda-matchers</li>
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %} 
+            устанавливаем FactoryGirl: простейшая настройка, создание фабрики, тестирование
+          </li>
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %} 
+            создаем фабрику с автоматическим назначением значений полей
+          </li>
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %}
+            Примечание:<br /><br /> 
+            В gem Rake начиная с версии 11 отсутствует метод <code class="codeline">last_comment</code>
+            <hr> 
+            Этот метод используется в rspec-rails
+            <hr> 
+            Поэтому если вы используете свежую версию Rake, то не используйте старую версию rspec-rails
+            <hr> 
+            Для этого впишите в Gemfile rspec-rails без версии, и тогда 
+            <code class="codeline">bundle install</code> подтянет сразу новую версию
+            <hr>
+            <p class="codeline">
+              group :development, :test do<br />
+              gem 'capybara'<br />
+              gem 'rspec-rails'<br />
+              end<br />
+            </p>
+          </li>
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %}
+            Примечание 2
+            <hr>
+            Когда вы будете использовать Shoulda Matchers - его нужно будет настроить
+            <hr>
+            Для этого в сгенерированной rails_helper.rb при запуске
+            <code class="codeline">rails g rspec:install</code>
+            <hr> 
+            (rspec-rails в версии от 3.0) добавьте:
+            <hr>
+            <p class="codeline">Shoulda::Matchers.configure do |config|<br />
+              config.integrate do |with|<br />
+              with.test_framework :rspec<br />
+              with.library :rails<br />
+              end<br />
+              end<br />
+            </p>
+            <hr>
+            Подробности: 
+            <a href="http://matchers.shoulda.io/docs/v3.1.1/index.html" target="_blank">
+              http://matchers.shoulda.io/docs/v3.1.1/index.html
+            </a>
+            <hr>
+            В файл с тестом вместо <code class="codeline">require 'spec_helper'</code>
+            <hr>
+            добавьте:
+            <hr>
+            <code class="codeline">require 'rails_helper'</code>
+          </li>
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %}
+            Примечание 3
+            <hr>
+            При настройке Factory_girl в rspec-rails старше 3.0 нужно добавить строчку в rails_helper:
+            <code class="codeline">require 'support/factory_girl'</code>
+          </li>
+          <hr>
+        </ul>
+      </div>
+
+      <div class="lesson-topic">
+        <p>{% include lesson-topic-svg.html %} Домашнее задание:</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %}
+            Добавить в <code class="codeline">Article</code> валидацию длины 
+            <code class="codeline">title</code> в 140 символов и написать тесты
+          </li>
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %}
+            Добавить в <code class="codeline">Article</code> валидацию длины 
+            <code class="codeline">text</code> в 4000 символов и написать тесты
+          </li>
+          <li class="list-group-item">
+            {% include lesson-info-svg.html %}
+            В <code class="codeline">Comment</code> добавить валидацию длины 
+            <code class="codeline">body</code> в 4000 символов и написать тесты
+          </li>
+          <hr>
+        </ul>
+      </div>
+    </div>
+
+    <!-- video 2 -->
+    <!--
+    <div class="tab-pane fade" id="pills-video2" role="tabpanel" aria-labelledby="pills-video2-tab">
+
+      <div class="card" id="video2">
+
+        <div class="card-body">
+          <div style="padding:59.38% 0 0 0;position:relative;">
+          <iframe src="#" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 5px; box-shadow: 0px 0px 20px 0px #999;"
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture">
+          </iframe>        
+        </div>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <!-- links from lessons -->    
+    <div class="tab-pane fade" id="pills-links" role="tabpanel" aria-labelledby="pills-links-tab">
+      {% include links-from-lessons.html %}
+    </div>
+
+  </div>
+</div>
