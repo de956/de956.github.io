@@ -1266,11 +1266,6 @@ footer {
     width: 30px;
   }
 
-  @media screen and (max-width: 996px) {
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-
   #links a {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1282,14 +1277,22 @@ footer {
     line-height: 30px;
   }
 
+  @media screen and (max-width: 996px) {
+    padding-left: 0%;
+    padding-right: 0%;
+
+    #links a {
+      svg { display: none; }
+    }
+  }
+
   #links a:hover {
     border: 2px solid #007BFF;
     color: black;
 
     svg {
       fill: #0068d8;
-    }
-    
+    }    
   }
 
   p.tg-links {
