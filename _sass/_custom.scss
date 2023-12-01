@@ -833,12 +833,12 @@ nav.container.navbar.navbar-expand-lg.navbar-light {
         width: 50%;
       }
 
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 770px) {
         width: 65%;
       }
 
-      @media screen and (max-width: 380px) {
-        width: 95%;
+      @media screen and (max-width: 460px) {
+        width: 100%;
       }
 
       svg {
