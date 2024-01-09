@@ -646,15 +646,32 @@ nav.container.navbar.navbar-expand-lg.navbar-light {
     padding: 5px;
   }
 
-  #first-button .btn.btn-primary.active {
-    padding-left: 26px;
-    padding-right: 26px;
+  #book-delivery-button .btn.btn-primary.active {
+    width: 265px;
+  }
+
+  @media  screen and (max-width: 310px) {
+    #book-delivery-button .btn.btn-primary.active {
+      padding-left: 26px;
+      padding-right: 26px;
+      width: auto;
+    }
+  }
+
+  #book-download-button .btn.btn-primary.active {
+    width: 150px;
   }
 
   .btn.btn-primary.active {
-    padding: 8px;
+    padding: 6px;
     background-color: #007BFF;
     border-color: #007BFF;
+
+    svg {
+      margin: 7px;
+      height: 22px;
+      width: auto;
+    }
   }
 
   .btn.btn-primary.active:hover {

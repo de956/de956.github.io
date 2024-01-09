@@ -143,30 +143,36 @@ permalink: /book/
           </div>
 
           <ul class="list-group list-group-flush">
-            <li class="list-group-item" id="first-button">
+            <li class="list-group-item" id="book-delivery-button">
               <a href="https://www.labirint.ru/books/954706/" 
                 target="_blank" 
                 class="btn btn-primary active" 
                 role="button" 
-                aria-pressed="true">Заказать на labirint.ru
+                aria-pressed="true">
+                {% include delivery-box-svg.html %} 
+                Заказать на labirint.ru
               </a>
             </li>
 
-            <li class="list-group-item">
+            <li class="list-group-item" id="book-delivery-button">
               <a href="https://www.chitai-gorod.ru/product/ruby-dlya-romantikov-samaya-prostaya-kniga-po-yazyku-ruby-s-zadaniyami-2986425" 
                 target="_blank" 
                 class="btn btn-primary active" 
                 role="button" 
-                aria-pressed="true">Заказать на chitai-gorod.ru
+                aria-pressed="true">
+                {% include delivery-box-svg.html %} 
+                Заказать на chitai-gorod.ru
               </a>
             </li>
 
-            <li class="list-group-item">
+            <li class="list-group-item" id="book-delivery-button">
               <a href="https://dmkpress.com/catalog/computer/programming/978-5-93700-182-5/" 
                 target="_blank" 
                 class="btn btn-primary active" 
                 role="button" 
-                aria-pressed="true">Заказать на dmkpress.com
+                aria-pressed="true">
+                {% include delivery-box-svg.html %} 
+                Заказать на dmkpress.com
               </a>
             </li>
           </ul>
@@ -185,13 +191,15 @@ permalink: /book/
             <p class="card-text">Самая простая книга по Ruby с заданиями</p>
           </div>
 
-          <ul class="list-group list-group-flush">
+          <ul class="list-group list-group-flush" id="book-download-button">
             <li class="list-group-item">
               <a href="https://leanpub.com/rubyisforfun_ru/" 
                 target="_blank" 
                 class="btn btn-primary active" 
                 role="button" 
-                aria-pressed="true">Загрузить
+                aria-pressed="true">
+                {% include download-svg.html %}
+                Загрузить
               </a>
             </li>
           </ul>
@@ -204,13 +212,15 @@ permalink: /book/
             <p class="card-text">Self-Study Course, From Absolute Beginner to Advanced</p>
           </div>
 
-          <ul class="list-group list-group-flush">
+          <ul class="list-group list-group-flush" id="book-download-button">
             <li class="list-group-item">
               <a href="https://leanpub.com/rubyisforfun/" 
                 target="_blank" 
                 class="btn btn-primary active" 
                 role="button" 
-                aria-pressed="true">Download
+                aria-pressed="true">
+                {% include download-svg.html %}
+                Download
               </a>
             </li>
           </ul>
