@@ -16,6 +16,9 @@
 // }
 
 // ********************** title-page ********************
+:focus {
+  outline: none;
+}
 
 .start-page {
   padding-top: 80px;
@@ -36,7 +39,8 @@
         background-color: rgb(3, 182, 3);
         color: white;
         font-weight: 450;
-        font-size: 12px;
+        font-size: 13px;
+        padding: 4px;
       }
     }
 
@@ -374,6 +378,63 @@ a.navbar-brand:hover {
 }
 
 #navbarSupportedContent {
+
+  ul div#theme {
+
+    button#theme {
+      background-color: white;
+      border-color: white;
+    }
+
+    svg {
+      color: #6c757d;
+      height: 22px;
+      width: auto;
+    }
+
+    button#theme:hover {
+      background-color: #F4F7FC;
+    }
+
+    div.dropdown-menu.show {
+
+      li.nav-item button.btn {
+        width: 100%;
+        background-color: white;
+        color: #4c545a;
+        text-align: left;
+        font-size: 400;
+        white-space: nowrap;
+        padding: 10px;
+      }
+
+      svg {
+        padding-right: 10px;
+        margin-bottom: 3px;
+        height: 22px;
+        width: auto;
+      }
+
+      li.nav-item button.btn:hover {
+        background-color: #F4F7FC;
+        color: black;
+  
+        svg {
+          color: black;
+        }
+      }
+    }
+  }
+
+  ul div#theme .btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  ul div#theme .btn:hover {
+    background-color: #F4F7FC;
+  }
+
   .nav-item {
 
     a {
@@ -421,6 +482,19 @@ hr.nav-header {
 
 nav.container.navbar.navbar-expand-lg.navbar-light {
   border-bottom: 1px solid #DFDFDF;
+
+  .navbar-toggler {
+    background-color: transparent;
+    outline: none;
+
+    .navbar-toggler-icon {
+      background-color: white;
+    }
+  }
+}
+
+nav.container.navbar.navbar-expand-lg.navbar-light:focus {
+  border-color: none;
 }
 
 // ************************ navigator-lessons (button at the bottom of the lesson page)
@@ -437,6 +511,7 @@ nav.container.navbar.navbar-expand-lg.navbar-light {
   a.btn-primary.btn-lg.active {
     margin: 4px;
     font-weight: 400;
+    font-size: 19px;
 
     svg {
       height: 25px;
@@ -451,6 +526,7 @@ nav.container.navbar.navbar-expand-lg.navbar-light {
     padding-left: 7px;
     background-color: #007BFF;
     border-color: #007BFF;
+    border-radius: 3px;
   }
 
   #r-index {
@@ -458,6 +534,7 @@ nav.container.navbar.navbar-expand-lg.navbar-light {
     padding-right: 7px;
     background-color: #007BFF;
     border-color: #007BFF;
+    border-radius: 3px;
   }
 
   #l-index:hover, #r-index:hover {
@@ -466,8 +543,6 @@ nav.container.navbar.navbar-expand-lg.navbar-light {
 
   @media  screen and (max-width: 321px) {
     .pagination {
-      // padding-left: 0px;
-      // padding-right: 0px;
       display: grid;
     }
   }
@@ -524,9 +599,13 @@ nav.container.navbar.navbar-expand-lg.navbar-light {
   svg {
     padding-right: 10px;
     margin-bottom: 4px;
-    height: 30px;
+    height: 28px;
     width: auto;
     fill: #4C545A;
+  }
+
+  hr {
+    border-color: transparent;
   }
 }
 
@@ -567,13 +646,6 @@ nav.container.navbar.navbar-expand-lg.navbar-light {
 
 .book-license {
   text-align: center;
-
-  // img {
-  //   margin: 5px;
-  //   width: 110px;
-  //   height: 22px;
-  //   display: inline;
-  // }
 
   a {
     font-size: 14px;
@@ -627,7 +699,7 @@ nav.container.navbar.navbar-expand-lg.navbar-light {
       width: 300px;
       margin: auto;
       display: block;
-      box-shadow: 1px 1px 10px 1px #999999;
+      border: 2px solid #aec0d6;
       max-width: 90%;
       height: auto;
       border-radius: 5px;
@@ -921,7 +993,13 @@ nav.container.navbar.navbar-expand-lg.navbar-light {
     }
 
     a {
-      border: 0px;
+      border: none;
+      padding: 2px;
+    }
+
+    a:hover {
+      background-color: #aec0d6;
+      border-radius: 3px;
     }
 
     svg {
@@ -986,7 +1064,13 @@ nav.container.navbar.navbar-expand-lg.navbar-light {
 
     a {
       border: none;
+      padding: 3px;
       word-break: break-all;
+    }
+
+    a:hover {
+      background-color: #aec0d6;
+      border-radius: 3px;
     }
 
     .card-header {
@@ -1041,8 +1125,10 @@ nav.container.navbar.navbar-expand-lg.navbar-light {
     margin: auto;
     display: block;
     border-radius: 50%;
-    box-shadow: 1px 1px 10px 1px #999999;
-    max-width: 90%;
+    border: 2px solid #aec0d6;
+    background-color: black;
+    box-shadow: none;
+    max-width: 100%;
     height: auto;
   }
 
@@ -1131,26 +1217,21 @@ nav.container.navbar.navbar-expand-lg.navbar-light {
   }
 }
 
-.feedback-support-header {
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;  
-  font-size:large;
-}
-
 .feedback-support {
+  background-color: white;
 
   a {
     font-size: 15px;
   }
 
   li.list-group-item {
+    background-color: white;
     line-height: 30px;
   }
 
   svg {
     margin: 3px;
-    height: 30px;
+    height: 28px;
     width: auto;
   }
 }
@@ -1162,19 +1243,20 @@ nav.container.navbar.navbar-expand-lg.navbar-light {
   }
 
   .card-body {
-    background-color: #f6f7fa;
     border-bottom: 1px solid rgb(214, 214, 214);
-  }
+    background-color: #ebedf3;
 
-  p.card-text {
-    text-align: left;
-    font-style: italic;
-    
+    p.card-text {
+      background-color: #ebedf3;
+      text-align: left;
+      font-style: italic;
+
+    }
   }
 
   .card-header {
     text-align: center;
-    background-color: #ebedf3;
+    background-color: #e4e6eb;
     
     p.feedback-title {
       margin-top: 1px;
@@ -1245,7 +1327,7 @@ footer {
         .nav-link.active {
           text-align: center;
           font-size: 1.12em;
-          margin: 2px;
+          margin: 5px;
           border-radius: 5px;
 
           a {
@@ -1255,11 +1337,13 @@ footer {
             font-weight: 400;
             padding: 5px;
             border-radius: 5px;
+            border: 2px solid #aec0d6;
           }
 
           a:hover {
             color: white;
             background-color: #007BFF;
+            border-color: #007BFF;
           }
         }
       }
@@ -1279,6 +1363,7 @@ footer {
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 5px;
+    margin-bottom: -1px;
     height: 30px;
     width: 30px;
   }
@@ -1289,9 +1374,12 @@ footer {
     color: #4C545A;
     background-color: #DDE3EC;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 5px;
     border: 2px solid #BACBDB;
     line-height: 30px;
+    max-width: 730px;
   }
 
   @media screen and (max-width: 996px) {

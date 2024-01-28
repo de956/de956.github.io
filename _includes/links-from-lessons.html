@@ -20,103 +20,102 @@
 </div>
 
 <div class="links-table">
-<div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-center" 
-          type="button" 
-          data-toggle="collapse" 
-          data-target="#collapseOne" 
-          aria-expanded="true" 
-          aria-controls="collapseOne">
-            {% include lesson-button-svg.html %} Как смотреть видео на ускоренном воспроизведении ?
-        </button>
-      </h2>
-    </div>
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-center" 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#collapseOne" 
+            aria-expanded="true" 
+            aria-controls="collapseOne">
+              {% include lesson-button-svg.html %} Как смотреть видео на ускоренном воспроизведении ?
+          </button>
+        </h2>
+      </div>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        Установите add-on в Firefox: Video Speed Controller.
-        Для ускорения нажмите много раз на D, для замедления — на S. 
-        Есть и для Google Chrome. Работает для Vimeo, Youtube и для всех остальных HTML5-видео.
-        Скорость регулируется даже больше, чем в нативной Youtube-настройке, где максимум двойная скорость. 
-        Можно увеличивать со звуком до скорости в 4 раза выше начальной.
-        <hr>
-        Постепенно приучайте свой мозг к более высоким скоростям просмотра ролика, 
-        и со временем вы будете быстрее осваивать видеоматериалы.
-        <hr>
-        Подробнее о Video Speed Controller: 
-        <a href="https://github.com/codebicycle/videospeed" target="_blank">
-          https://github.com/codebicycle/videospeed
-        </a>
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          Установите add-on в Firefox: Video Speed Controller.
+          Для ускорения нажмите много раз на D, для замедления — на S. 
+          Есть и для Google Chrome. Работает для Vimeo, Youtube и для всех остальных HTML5-видео.
+          Скорость регулируется даже больше, чем в нативной Youtube-настройке, где максимум двойная скорость. 
+          Можно увеличивать со звуком до скорости в 4 раза выше начальной.
+          <hr>
+          Постепенно приучайте свой мозг к более высоким скоростям просмотра ролика, 
+          и со временем вы будете быстрее осваивать видеоматериалы.
+          <hr>
+          Подробнее о Video Speed Controller: 
+          <a href="https://github.com/codebicycle/videospeed" target="_blank">
+            https://github.com/codebicycle/videospeed
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-center collapsed" 
-          type="button" 
-          data-toggle="collapse" 
-          data-target="#collapseTwo" 
-          aria-expanded="false" 
-          aria-controls="collapseTwo">
-            {% include lesson-button-svg.html %} Памятка юного линуксоида
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-        <center><u>Рекомендуется выбирать популярные дистрибютивы GNU/Linux для первого опыта использования!</u></center>
-        <br>
-        Такие как Ubuntu (Lubuntu/Kubuntu/Xubuntu), Linux Mint, Fedora (Debian и Arch тоже популярны,
-        но более сложны в настройке/установке).<br />
-        Эти дистрибютивы с доступной документацией и большим сообществом пользователей. 
-        Поэтому, в случае каких-либо вопросов, скорее всего, ответ будет на первой поисковой странице,
-        либо всегда будет возможность спросить у многочисленных пользователей.
-        <hr>
-        Рекомендуется устанавливать программы из репозиториев дистрибютива
-        или сайта/репозитория конкретного производителя программы.
-        <hr>
-        Рекомендуется использовать менеджеры версий Ruby, такие как 
-        <code class="codeline">rvm/rbenv/chruby/asdf</code> 
-        и не рекомендуется использовать "системный" Ruby дистрибютива.
-        <hr>
-        Не использовать <code class="codeline">sudo/root</code> для установки gem'ов, версий Ruby.
-        <hr>
-        Не использовать директорию <code class="codeline">/tmp</code> - это каталог временных файлов. 
-        После перезагрузки файлы будут удалены!
-        <hr>
-        С осторожностью использовать команду удаления <code class="codeline">rm -rf</code>.
-        <hr>
-        Заглядывать и читать в директории <code class="codeline">/var/log/*</code> - там системные логи.
-        <hr>
-        Для справочной информации обычно достаточно добавить <code class="codeline">-h/-help/--help</code>.
-        Например: <code class="codeline">user@rubyschool:~$ ruby -h</code>.<br /><br />
-        Можно также воспользоваться утилитой <code class="codeline">man</code>, 
-        например: <code class="codeline">user@rubyschool:~$ man ruby</code>.
-        <hr>
-        Для поиска программ (например консольного файлового менеджера midnight-commander)
-        из репозиториев дистрибютива можно воспользоваться командой:<br>
-        <br />
-        для debian-based дистрибютива: <code class="codeline">user@rubyschool:~$ apt search mc</code><br /><br />
-        для arch-based дистрибютива: <code class="codeline">user@rubyschool:~$ pacman -S mc</code> / 
-        <code class="codeline">user@rubyschool:~$ pacman -Ss mc</code>.
-        <hr>
-        Узнать место/каталог установленной программы: <code class="codeline">user@rubyschool:~$ which ruby</code>.
-        <hr>
-        Базовый список других команд: 
-        <a href="https://wiki.debian.org/ru/ShellCommands" target="_blank">
-          https://wiki.debian.org/ru/ShellCommands
-        </a>.
-        <hr>
-        Не рекомендуется под root'ом работать и ходить на сервер по <code class="codeline">ssh</code>.
-        <hr>
-        <u>Ни стоит (!) менять локаль/язык на сервере - оставить по умолчанию (т. е. EN/US, на латинице).</u>
-        <hr>
-        <u>Делать резервные копии важных данных!</u>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-center collapsed" 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#collapseTwo" 
+            aria-expanded="false" 
+            aria-controls="collapseTwo">
+              {% include lesson-button-svg.html %} Памятка юного линуксоида
+          </button>
+        </h2>
       </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+          <center><u>Рекомендуется выбирать популярные дистрибютивы GNU/Linux для первого опыта использования!</u></center>
+          <br>
+          Такие как Ubuntu (Lubuntu/Kubuntu/Xubuntu), Linux Mint, Fedora (Debian и Arch тоже популярны,
+          но более сложны в настройке/установке).<br />
+          Эти дистрибютивы с доступной документацией и большим сообществом пользователей. 
+          Поэтому, в случае каких-либо вопросов, скорее всего, ответ будет на первой поисковой странице,
+          либо всегда будет возможность спросить у многочисленных пользователей.
+          <hr>
+          Рекомендуется устанавливать программы из репозиториев дистрибютива
+          или сайта/репозитория конкретного производителя программы.
+          <hr>
+          Рекомендуется использовать менеджеры версий Ruby, такие как 
+          <code class="codeline">rvm/rbenv/chruby/asdf</code> 
+          и не рекомендуется использовать "системный" Ruby дистрибютива.
+          <hr>
+          Не использовать <code class="codeline">sudo/root</code> для установки gem'ов, версий Ruby.
+          <hr>
+          Не использовать директорию <code class="codeline">/tmp</code> - это каталог временных файлов. 
+          После перезагрузки файлы будут удалены!
+          <hr>
+          С осторожностью использовать команду удаления <code class="codeline">rm -rf</code>.
+          <hr>
+          Заглядывать и читать в директории <code class="codeline">/var/log/*</code> - там системные логи.
+          <hr>
+          Для справочной информации обычно достаточно добавить <code class="codeline">-h/-help/--help</code>.
+          Например: <code class="codeline">user@rubyschool:~$ ruby -h</code>.<br /><br />
+          Можно также воспользоваться утилитой <code class="codeline">man</code>, 
+          например: <code class="codeline">user@rubyschool:~$ man ruby</code>.
+          <hr>
+          Для поиска программ, например консольного файлового менеджера midnight-commander,
+          из репозиториев дистрибютива можно воспользоваться командой:<br>
+          <br />
+          для debian-based дистрибютива: <code class="codeline">user@rubyschool:~$ apt search mc</code><br /><br />
+          для arch-based дистрибютива: <code class="codeline">user@rubyschool:~$ pacman -S mc</code>
+          <hr>
+          Узнать место/каталог установленной программы: <code class="codeline">user@rubyschool:~$ which ruby</code>.
+          <hr>
+          Базовый список других команд: 
+          <a href="https://wiki.debian.org/ru/ShellCommands" target="_blank">
+            https://wiki.debian.org/ru/ShellCommands
+          </a>.
+          <hr>
+          Не рекомендуется под root'ом работать и ходить на сервер по <code class="codeline">ssh</code>.
+          <hr>
+          <u>Ни стоит (!) менять локаль/язык на сервере - оставить по умолчанию (т. е. EN/US, на латинице).</u>
+          <hr>
+          <u>Делать резервные копии важных данных!</u>
+        </div>
     </div>
   </div>
   <div class="card">
@@ -920,5 +919,5 @@
       </div>
     </div>
   </div>
-</div>
+  </div>
 </div>

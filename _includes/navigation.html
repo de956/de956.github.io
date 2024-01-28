@@ -1,4 +1,3 @@
-
 <nav class="container navbar navbar-expand-lg navbar-light">
   <div class="rubyschool-logo">
     <div class="card">
@@ -45,12 +44,13 @@
           <a class="dropdown-item" href={{"/lessons/" | relative_url}}>Уроки (1-50)</a>
 
           <div class="dropdown-divider"></div>
-            <a
-              class="dropdown-item"
-              target="_blank"
-              href="https://github.com/ro31337/rubyschool/blob/master/README.md"
-              >Темы уроков (Github)
-            </a>
+
+          <a
+            class="dropdown-item"
+            target="_blank"
+            href="https://github.com/ro31337/rubyschool/blob/master/README.md"
+            >Темы уроков (Github)
+          </a>
           
           <div class="dropdown-divider"></div>
           <a
@@ -89,6 +89,39 @@
       <li class="nav-item">
         <a class="nav-link" href={{"/author/" | relative_url}}>Автор</a>
       </li>
+
+      <div class="dropdown" id="theme" title="Тема оформления"> 
+        <button class="btn btn-secondary" id="theme" type="button" data-toggle="dropdown" aria-expanded="false">
+          {% include default-theme-svg.html %}
+        </button>
+
+        <div class="dropdown-menu">          
+          <li class="nav-item">
+            <button type="button" class="btn" onclick="changeTheme('light')">
+              {% include light-theme-svg.html %}
+              Светлая тема
+            </button>
+          </li>
+
+          <div class="dropdown-divider"></div>
+
+          <li class="nav-item">
+            <button type="button" class="btn" onclick="changeTheme('dark')">
+              {% include dark-theme-svg.html %}
+              Тёмная тема
+            </button>
+          </li>
+
+          <div class="dropdown-divider"></div>
+
+          <li class="nav-item">
+            <button type="button" class="btn" onclick="changeTheme()">
+              {% include default-theme-svg.html %}
+              По умолчанию  
+            </button>
+          </li>
+        </div>
+      </div>
     </ul>
   </div>
 </nav>
