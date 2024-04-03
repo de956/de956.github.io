@@ -566,8 +566,9 @@ nav.container.navbar.navbar-expand-lg.navbar-light:focus {
   }
 
   #book-description {
+    text-align: center;
     padding-bottom: 100px;
-    max-width: 90%;
+    max-width: 80%;
     margin: auto;
     line-height: 27px;
   }
@@ -588,7 +589,7 @@ nav.container.navbar.navbar-expand-lg.navbar-light:focus {
   }
 
   .list-group-flush {
-    padding-left: 1%;
+    padding-left: 4%;
     line-height: 30px;
   }
 
